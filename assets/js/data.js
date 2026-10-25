@@ -1,5 +1,5 @@
 // Ninja Combat Academy - Master Curricula & Academy Data Store
-// Founder: Ninja Dhruv (Black Belt 1st Dan) | Mathura Honbu Dojo & Global Online
+// Founder: Ninja Dhruv (Black Belt 3rd Dan) | Mathura Honbu Dojo & Global Online
 
 const NCA_DATA = {
     academy: {
@@ -7,7 +7,7 @@ const NCA_DATA = {
         kanji: "忍者戦闘道場",
         tagline: "The Ancient Art of the Shinobi. Forged for Modern Reality.",
         founder: "Ninja Dhruv",
-        credentials: "Black Belt 1st Dan | Master of Traditional Japanese Systems & Tactical Combat",
+        credentials: "Black Belt 3rd Dan | Master of Traditional Japanese Systems & Tactical Combat",
         phone: "+91 8865839038",
         whatsapp: "918865839038",
         email: "ninjadhruva@gmail.com",
@@ -264,11 +264,29 @@ const NCA_DATA = {
         {
             belt: "Black Belt (1st Dan - Shodan)",
             rank: "1st Dan",
-            title: "Jōnin (上忍 - Shinobi Master)",
+            title: "Jōnin (上忍 - Shinobi Operative)",
             colorHex: "#111111",
             border: "#d90429",
-            duration: "Years 3 - 4+",
+            duration: "Years 3 - 4",
             requirements: "Comprehensive mastery of all 18 disciplines, unannounced blindfold reflex test (Sakki Test), formal combat demonstration, dojo assistant certification."
+        },
+        {
+            belt: "Black Belt (2nd Dan - Nidan)",
+            rank: "2nd Dan",
+            title: "Shihan-dai (師範代 - Senior Instructor)",
+            colorHex: "#0a0a0a",
+            border: "#ffd166",
+            duration: "Years 5 - 6",
+            requirements: "Advanced dual-blade Kenjutsu kumitachi, lethal Dakentaijutsu counter-offensive reversals, night tactical tracking, and formal apprentice mentorship."
+        },
+        {
+            belt: "Black Belt (3rd Dan - Sandan)",
+            rank: "3rd Dan",
+            title: "Sensei Headmaster (先生 - Senior Lineage Master)",
+            colorHex: "#000000",
+            border: "#d90429",
+            duration: "Years 7+ Master Lineage",
+            requirements: "Highest master-level synthesis across all 18 Shinobi Jūhakkei arts, esoteric Kuji-in battlefield psychological mastery, independent dojo governance, and authorized Dan certification lineage under Sensei Ninja Dhruv."
         }
     ],
 
@@ -412,7 +430,7 @@ const NCA_DATA = {
         },
         {
             q: "Are the belt ranks and certificates officially recognized?",
-            a: "Yes. Ninja Combat Academy awards official rank credentials authenticated by Sensei Ninja Dhruv (1st Dan Black Belt), aligned with international Bujinkan-inspired standards and partner martial federations in India."
+            a: "Yes. Ninja Combat Academy awards official rank credentials authenticated by Sensei Ninja Dhruv (3rd Dan Black Belt), aligned with international Bujinkan-inspired standards and partner martial federations in India."
         },
         {
             q: "Is Ninjutsu suitable for women's self-defense?",
@@ -431,7 +449,7 @@ const NCA_DATA = {
         },
         {
             keywords: ["founder", "teacher", "sensei", "master", "dhruv", "who"],
-            response: "Ninja Combat Academy is founded and mentored by Sensei Ninja Dhruv, a certified 1st Dan Black Belt specializing in traditional Japanese warrior systems, classical Ninjutsu, Kenjutsu, and modern tactical combat."
+            response: "Ninja Combat Academy is founded and mentored by Sensei Ninja Dhruv, a certified 3rd Dan Black Belt specializing in traditional Japanese warrior systems, classical Ninjutsu, Kenjutsu, and modern tactical combat."
         },
         {
             keywords: ["contact", "phone", "number", "whatsapp", "email", "call"],
