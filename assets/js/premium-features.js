@@ -10,7 +10,7 @@ class ShinobiPremiumFeatures {
     }
 
     init() {
-        this.initDojoTour();
+        // this.initDojoTour(); (removed as requested)
         this.initKataAnalyzer();
         this.initWarriorRadar();
         this.initRegistrySearch();
@@ -322,9 +322,9 @@ class ShinobiPremiumFeatures {
         if (!searchInput || !tableBody) return;
 
         const graduates = [
-            { name: "Sensei Ninja Dhruv", rank: "3rd Dan Black Belt", year: "Headmaster", certHash: "SHA-NCA-HONBU-001", status: "Verified Shihan" },
+            { name: "Sensei Ninja Dhruv", rank: "1st Dan Black Belt (Shodan)", year: "Headmaster", certHash: "SHA-NCA-HONBU-001", status: "Active Headmaster" },
             { name: "Rajeshwar Sharma", rank: "1st Dan Black Belt (Shodan)", year: "2025", certHash: "SHA-NCA-MTH-108", status: "Verified Active" },
-            { name: "Ananya Deshmukh", rank: "2nd Dan Black Belt (Nidan)", year: "2024", certHash: "SHA-NCA-MUM-204", status: "Verified Active" },
+            { name: "Ananya Deshmukh", rank: "1st Dan Black Belt (Shodan)", year: "2024", certHash: "SHA-NCA-MUM-204", status: "Verified Active" },
             { name: "Vikramjit Singh", rank: "1st Dan Black Belt (Shodan)", year: "2025", certHash: "SHA-NCA-DEL-319", status: "Verified Active" },
             { name: "David M.", rank: "1st Dan Black Belt (Shodan)", year: "2026", certHash: "SHA-NCA-LDN-412", status: "Verified International" },
             { name: "Pooja V. Nair", rank: "1st Dan Black Belt (Shodan)", year: "2025", certHash: "SHA-NCA-BLR-502", status: "Verified Active" }

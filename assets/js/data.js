@@ -1,5 +1,5 @@
 // Ninja Combat Academy - Master Curricula & Academy Data Store
-// Founder: Ninja Dhruv (Black Belt 3rd Dan) | Mathura Honbu Dojo & Global Online
+// Founder: Ninja Dhruv (Black Belt 1st Dan) | Mathura Honbu Dojo & Global Online
 
 const NCA_DATA = {
     academy: {
@@ -21,7 +21,7 @@ const NCA_DATA = {
 
     founderBio: {
         name: "Sensei Ninja Dhruv",
-        rank: "Sandan (3rd Dan Black Belt)",
+        rank: "Shodan (1st Dan Black Belt)",
         summary: "A dedicated practitioner and pioneer of traditional Japanese warrior arts in India. With over a decade of continuous study across classical Ninjutsu, Kenjutsu, and modern tactical combat systems, Ninja Dhruv founded the Ninja Combat Academy to bridge timeless martial discipline, stealth science, and practical modern personal protection.",
         quote: "True Ninjutsu is not violence; it is the art of surviving, enduring, and remaining centered when chaos surrounds you. In the ancient texts, 'Nin' (忍) means perseverance under the edge of a blade. We don't build fighters—we forge disciplined, unstoppable human spirits.",
         pillars: [
@@ -269,15 +269,6 @@ const NCA_DATA = {
             border: "#d90429",
             duration: "Years 3 - 4+",
             requirements: "Comprehensive mastery of all 18 disciplines, unannounced blindfold reflex test (Sakki Test), formal combat demonstration, dojo assistant certification."
-        },
-        {
-            belt: "Black Belt (3rd Dan - Sandan)",
-            rank: "3rd Dan",
-            title: "Shihan / Sensei (師範 - Head Instructor)",
-            colorHex: "#000000",
-            border: "#e5a93c",
-            duration: "Current Rank of Sensei Ninja Dhruv",
-            requirements: "Senior instruction mastery, high-level tactical weapon integration, lineage scroll preservation, mentorship of regional dojos."
         }
     ],
 

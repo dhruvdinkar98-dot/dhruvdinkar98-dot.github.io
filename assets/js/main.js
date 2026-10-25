@@ -1094,6 +1094,7 @@ function init3DForge() {
    ============================================================ */
 function initBladeGame() {
     const canvas = document.getElementById("blade-combat-canvas");
+    if (!canvas) return;
     if (!canvas || typeof ShinobiBladeGame === "undefined") return;
 
     window.bladeGame = new ShinobiBladeGame("blade-combat-canvas");

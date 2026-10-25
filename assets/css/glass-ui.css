@@ -1361,3 +1361,383 @@ a {
     line-height: 1.4 !important;
     vertical-align: middle !important;
 }
+
+/* ============================================================
+   HEADER & ROUND LOGO REDESIGN (CLEAN & NON-CONGESTED)
+   ============================================================ */
+.top-announcement-bar {
+    background: #ffffff !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
+    padding: 8px 0 !important;
+    font-size: 0.84rem !important;
+    color: #334155 !important;
+}
+.top-bar-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+}
+.top-left-info {
+    display: flex !important;
+    align-items: center !important;
+    gap: 18px !important;
+    flex-wrap: wrap !important;
+}
+.top-phone-link {
+    color: #090d16 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    font-size: 0.85rem !important;
+    margin-right: 12px !important;
+}
+.top-phone-link:hover {
+    color: #d90429 !important;
+}
+.top-wa-pill {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 4px 12px !important;
+    background: rgba(37, 211, 102, 0.12) !important;
+    color: #059669 !important;
+    border: 1px solid rgba(37, 211, 102, 0.35) !important;
+    border-radius: 20px !important;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+.top-wa-pill:hover {
+    background: #25d366 !important;
+    color: #ffffff !important;
+}
+
+/* NAVBAR & CIRCULAR LOGO */
+.navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04) !important;
+    padding: 12px 0 !important;
+}
+.nav-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+/* BIG ROUND CIRCULAR LOGO */
+.brand-logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    text-decoration: none !important;
+}
+.brand-logo-circle {
+    width: 62px !important;
+    height: 62px !important;
+    min-width: 62px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    background: #ffffff !important;
+    border: 2.5px solid #d90429 !important;
+    box-shadow: 0 4px 14px rgba(217, 4, 41, 0.25), 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+.brand-logo:hover .brand-logo-circle {
+    transform: scale(1.06) rotate(3deg) !important;
+    box-shadow: 0 6px 20px rgba(217, 4, 41, 0.4) !important;
+}
+
+.brand-text-block {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+}
+.nca-main-title {
+    font-family: var(--font-display, "Outfit", sans-serif) !important;
+    font-size: 1.5rem !important;
+    font-weight: 900 !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0.02em !important;
+    display: inline-block !important;
+}
+.nca-letter-red {
+    color: #d90429 !important;
+    font-weight: 900 !important;
+    font-size: 1.7rem !important;
+    display: inline-block !important;
+}
+.nca-letter-black {
+    color: #090d16 !important;
+    font-weight: 850 !important;
+}
+.nca-sub-tag {
+    font-size: 0.68rem !important;
+    font-weight: 700 !important;
+    color: #64748b !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+}
+
+/* CLEAN NAV LINKS */
+.nav-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 22px !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.nav-link {
+    color: #334155 !important;
+    font-weight: 600 !important;
+    font-size: 0.94rem !important;
+    text-decoration: none !important;
+    padding: 6px 0 !important;
+    position: relative !important;
+    transition: color 0.2s ease !important;
+}
+.nav-link:hover, .nav-link.active {
+    color: #d90429 !important;
+}
+.nav-link.active::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 2px !important;
+    background: #d90429 !important;
+    border-radius: 2px !important;
+}
+
+/* ============================================================
+   BELT PROGRESSION CONTRAST FIXES
+   ============================================================ */
+.belts-section {
+    background: #f8fafc !important;
+}
+.belt-node-btn {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04) !important;
+    color: #090d16 !important;
+    padding: 14px 18px !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
+}
+.belt-node-btn:hover {
+    background: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08) !important;
+    transform: translateY(-2px) !important;
+}
+.belt-node-btn.active {
+    background: #ffffff !important;
+    border-color: #d90429 !important;
+    box-shadow: 0 6px 20px rgba(217, 4, 41, 0.16) !important;
+}
+.belt-node-title {
+    color: #090d16 !important;
+    font-weight: 800 !important;
+    font-size: 1rem !important;
+    display: block !important;
+}
+.belt-node-rank {
+    color: #475569 !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    display: block !important;
+}
+.belt-detail-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06) !important;
+    padding: 36px !important;
+    border-radius: 12px !important;
+}
+.belt-detail-kyu {
+    color: #d90429 !important;
+    font-weight: 800 !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+}
+.belt-detail-title {
+    color: #090d16 !important;
+    font-weight: 900 !important;
+    font-size: 1.85rem !important;
+    margin: 6px 0 !important;
+}
+.belt-detail-time {
+    color: #334155 !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+}
+.belt-detail-time strong {
+    color: #b45309 !important;
+}
+.belt-req-box {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 22px !important;
+    margin: 22px 0 !important;
+}
+.belt-req-box h4 {
+    color: #b45309 !important;
+    font-weight: 800 !important;
+    margin-bottom: 8px !important;
+    font-size: 1rem !important;
+}
+.belt-req-box p {
+    color: #1e293b !important;
+    font-size: 0.98rem !important;
+    line-height: 1.75 !important;
+    font-weight: 500 !important;
+}
+.belt-cert-badge {
+    background: #fef2f2 !important;
+    border: 1px solid #fecaca !important;
+    color: #b91c1c !important;
+    font-weight: 700 !important;
+    padding: 10px 16px !important;
+    border-radius: 6px !important;
+    display: inline-flex !important;
+}
+
+/* ============================================================
+   DAN REGISTRY HIGH CONTRAST OVERRIDES
+   ============================================================ */
+.registry-section {
+    background: #ffffff !important;
+}
+.registry-table {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+}
+.registry-table th {
+    background: #f1f5f9 !important;
+    color: #090d16 !important;
+    font-weight: 800 !important;
+    font-size: 0.88rem !important;
+    border-bottom: 2px solid #cbd5e1 !important;
+    padding: 14px 18px !important;
+}
+.registry-table td {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    font-weight: 600 !important;
+    font-size: 0.92rem !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    padding: 14px 18px !important;
+}
+.registry-table tr:hover td {
+    background: #f8fafc !important;
+}
+.registry-search-bar input {
+    background: #ffffff !important;
+    border: 1.5px solid #cbd5e1 !important;
+    color: #090d16 !important;
+    font-weight: 600 !important;
+}
+.registry-search-bar input::placeholder {
+    color: #94a3b8 !important;
+}
+
+/* ============================================================
+   FOOTER HIGH-CONTRAST OVERRIDES (ZERO DARK-ON-DARK)
+   ============================================================ */
+footer.footer, .footer {
+    background: #090d16 !important;
+    border-top: 3px solid #d90429 !important;
+    color: #cbd5e1 !important;
+    padding: 70px 0 30px !important;
+}
+footer.footer h2, footer.footer h3, footer.footer h4,
+.footer h2, .footer h3, .footer h4 {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+footer.footer p, .footer p {
+    color: #94a3b8 !important;
+    line-height: 1.7 !important;
+}
+footer.footer .footer-brand p, .footer .footer-brand p {
+    color: #cbd5e1 !important;
+}
+footer.footer .footer-links-col h4,
+.footer .footer-links-col h4 {
+    color: #f59e0b !important;
+    font-size: 1.05rem !important;
+    margin-bottom: 16px !important;
+    font-weight: 800 !important;
+}
+footer.footer .footer-links-col a,
+.footer .footer-links-col a {
+    color: #e2e8f0 !important;
+    font-weight: 500 !important;
+    font-size: 0.92rem !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    transition: color 0.2s, transform 0.2s !important;
+}
+footer.footer .footer-links-col a:hover,
+.footer .footer-links-col a:hover {
+    color: #d90429 !important;
+    transform: translateX(4px) !important;
+}
+footer.footer .footer-bottom,
+.footer .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #94a3b8 !important;
+    padding-top: 24px !important;
+    margin-top: 40px !important;
+}
+footer.footer .footer-bottom p, .footer .footer-bottom p {
+    color: #94a3b8 !important;
+}
+footer.footer .footer-social-row a, .footer .footer-social-row a {
+    color: #cbd5e1 !important;
+}
+footer.footer .footer-social-row a:hover, .footer .footer-social-row a:hover {
+    color: #f59e0b !important;
+}
+footer.footer .footer-input-wrap input,
+.footer .footer-input-wrap input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    padding: 10px 14px !important;
+    border-radius: 6px !important;
+}
+
+/* Modes and Pavilion High-Contrast Rules */
+.modes-section, .pavilion-section, .reviews-section, .faq-section, .location-section {
+    background: #f8fafc !important;
+}
+.mode-card, .pavilion-card, .review-card, .faq-item, .contact-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+}
+.mode-card h3, .pavilion-card h3, .review-card h4, .faq-question span, .contact-card h3 {
+    color: #090d16 !important;
+    font-weight: 800 !important;
+}
+.mode-lead, .review-text, .faq-answer p, .contact-card p {
+    color: #334155 !important;
+    line-height: 1.7 !important;
+}
+.mode-features-list li {
+    color: #1e293b !important;
+    font-weight: 500 !important;
+}
+.mode-features-list li span.check-icon {
+    color: #059669 !important;
+    font-weight: 800 !important;
+}

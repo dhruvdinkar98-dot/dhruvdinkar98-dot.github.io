@@ -9,6 +9,19 @@ capture_sections.js
 detect_overlaps.js
 parse_issues.js
 run_overlap_audit.js
+inspect_*.js
+find_*.js
+update_*.js
+add_*.js
+clean_*.js
+strip_*.js
+list_*.js
+audit_*.js
+
+# Temporary helpers
+server.js
+HOSTING_GUIDE.md
+*.bat
 
 # Preview screenshots (keep repo small and fast)
 preview_*.png
