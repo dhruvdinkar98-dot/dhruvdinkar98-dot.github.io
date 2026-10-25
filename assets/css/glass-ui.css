@@ -2390,3 +2390,419 @@ footer.footer .footer-input-wrap input,
 .btn-book-slot:hover svg {
     transform: translateX(5px) !important;
 }
+
+
+/* ==========================================================================
+   UNIVERSAL HIGH-CONTRAST WCAG AAA OVERRIDES (ZERO MATCHING BG/TEXT)
+   ========================================================================== */
+
+/* 1. Global Light Background Body & Sections */
+.disciplines-section,
+.belts-section,
+.quiz-section,
+.modes-section,
+.pavilion-section,
+.virtues-section,
+.kuji-section,
+.vip-admission-section,
+.iq-section,
+.registry-section,
+.reviews-section,
+.faq-section,
+.location-section,
+.network-section {
+    background: #f8fafc !important;
+    color: #0f172a !important;
+}
+
+/* 2. Global Section Headers: Titles & Subtitles */
+.section-tag {
+    color: #d90429 !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+}
+.section-title {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+}
+.section-title span {
+    color: #d90429 !important;
+}
+.section-desc {
+    color: #475569 !important;
+    font-weight: 500 !important;
+    line-height: 1.6 !important;
+}
+
+/* 3. Belt Progression Section */
+.belt-node-btn {
+    background: #ffffff !important;
+    border: 1.5px solid #cbd5e1 !important;
+    color: #0f172a !important;
+}
+.belt-node-title {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+}
+.belt-node-rank {
+    color: #64748b !important;
+    font-weight: 600 !important;
+}
+.belt-node-btn.active {
+    background: #0f172a !important;
+    border-color: #d90429 !important;
+}
+.belt-node-btn.active .belt-node-title {
+    color: #ffffff !important;
+}
+.belt-node-btn.active .belt-node-rank {
+    color: #fbbf24 !important;
+}
+.belt-detail-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+.belt-detail-kyu {
+    color: #d90429 !important;
+    font-weight: 800 !important;
+}
+.belt-detail-title {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+}
+.belt-detail-time {
+    color: #475569 !important;
+}
+.belt-detail-time strong {
+    color: #b45309 !important;
+}
+.belt-req-box {
+    background: #f1f5f9 !important;
+    border: 1.5px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 22px !important;
+}
+.belt-req-box h4 {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+    margin-bottom: 8px !important;
+}
+.belt-req-box p {
+    color: #1e293b !important;
+    font-weight: 500 !important;
+    line-height: 1.65 !important;
+    margin: 0 !important;
+}
+.belt-cert-badge {
+    background: #fef3c7 !important;
+    border: 1px solid #fcd34d !important;
+    color: #92400e !important;
+    font-weight: 700 !important;
+}
+
+/* 4. Interactive Placement Quiz */
+.quiz-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06) !important;
+    padding: 36px !important;
+    border-radius: 20px !important;
+}
+.quiz-step-counter {
+    color: #d90429 !important;
+    font-weight: 800 !important;
+}
+.quiz-progress-bar {
+    background: #e2e8f0 !important;
+}
+.quiz-progress-fill {
+    background: #d90429 !important;
+}
+.quiz-question-title {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+    font-size: 1.45rem !important;
+    line-height: 1.4 !important;
+}
+.quiz-opt-btn {
+    background: #f8fafc !important;
+    border: 1.5px solid #cbd5e1 !important;
+    color: #0f172a !important;
+    border-radius: 12px !important;
+    transition: all 0.2s ease !important;
+}
+.quiz-opt-btn:hover {
+    background: #0f172a !important;
+    border-color: #0f172a !important;
+    color: #ffffff !important;
+    transform: translateX(6px) !important;
+}
+.opt-indicator {
+    background: #0f172a !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+.quiz-opt-btn:hover .opt-indicator {
+    background: #d90429 !important;
+    color: #ffffff !important;
+}
+.opt-text {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+}
+.quiz-opt-btn:hover .opt-text {
+    color: #ffffff !important;
+}
+.quiz-result-title {
+    color: #0f172a !important;
+}
+.quiz-result-pitch {
+    color: #334155 !important;
+}
+.voucher-label {
+    color: #64748b !important;
+}
+.voucher-code {
+    color: #b45309 !important;
+}
+
+/* 5. Virtues Section */
+.virtue-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04) !important;
+}
+.virtue-kanji {
+    color: #d90429 !important;
+}
+.virtue-title {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+    font-size: 1.15rem !important;
+}
+.virtue-desc {
+    color: #334155 !important;
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+}
+
+/* 6. Kuji-in 9 Seals */
+.kuji-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04) !important;
+}
+.kuji-card-kanji {
+    color: #7c3aed !important;
+}
+.kuji-card-title {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+}
+.kuji-card-chakra {
+    color: #6d28d9 !important;
+    font-weight: 700 !important;
+}
+.kuji-card-desc {
+    color: #334155 !important;
+    line-height: 1.55 !important;
+}
+
+/* 7. VIP Mentorship & Audition */
+.vip-perks-card, .vip-apply-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+.vip-perk-item strong {
+    color: #0f172a !important;
+    font-size: 1.05rem !important;
+}
+.vip-perk-item p {
+    color: #475569 !important;
+}
+
+/* 8. Warrior Aptitude Radar */
+.radar-canvas-wrap, .iq-sliders-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+.iq-sliders-card h3 {
+    color: #0f172a !important;
+}
+.slider-header span {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+}
+.slider-val {
+    color: #d90429 !important;
+}
+
+/* 9. Reviews & Testimonials */
+.testimonial-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04) !important;
+}
+.test-quote {
+    color: #1e293b !important;
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+}
+.test-name {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+}
+.test-meta {
+    color: #64748b !important;
+}
+
+/* 10. FAQ Accordion */
+.faq-item {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    margin-bottom: 14px !important;
+    border-radius: 12px !important;
+}
+.faq-question {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    font-size: 1.02rem !important;
+}
+.faq-answer p {
+    color: #334155 !important;
+    line-height: 1.65 !important;
+}
+
+/* 11. Location & Contact */
+.location-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+.location-card h3 {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+}
+.location-card p {
+    color: #475569 !important;
+}
+.loc-item strong {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+}
+.loc-item span {
+    color: #334155 !important;
+}
+.loc-item a {
+    color: #d90429 !important;
+    font-weight: 700 !important;
+}
+
+/* 12. Global Shinobi Network */
+.network-node-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04) !important;
+}
+.network-node-card.honbu-node {
+    border: 2px solid #b45309 !important;
+    background: #ffffff !important;
+    box-shadow: 0 8px 24px rgba(180, 83, 9, 0.12) !important;
+}
+.node-city {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+    font-size: 1.2rem !important;
+}
+.node-role {
+    color: #475569 !important;
+    font-weight: 600 !important;
+}
+.node-stat-item span {
+    color: #64748b !important;
+}
+.node-stat-item strong {
+    color: #0f172a !important;
+}
+
+/* 13. FOOTER (GROUNDED DARK SLATE - PURE WHITE & GOLD CONTRAST) */
+footer.footer, .footer {
+    background: #090d16 !important;
+    border-top: 2px solid #1e293b !important;
+    padding: 70px 0 30px !important;
+    color: #cbd5e1 !important;
+}
+.footer-brand h2 {
+    color: #ffffff !important;
+    font-size: 1.4rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+}
+.footer-brand h2 span {
+    color: #d90429 !important;
+}
+.footer-brand p {
+    color: #cbd5e1 !important;
+    font-size: 0.92rem !important;
+    line-height: 1.65 !important;
+}
+.footer-brand div {
+    color: #fbbf24 !important;
+}
+.footer-brand strong {
+    color: #ffffff !important;
+}
+.footer-links-col h4, .footer-newsletter h4 {
+    color: #ffffff !important;
+    font-size: 1.05rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 16px !important;
+}
+.footer-links-col ul li a {
+    color: #94a3b8 !important;
+    font-size: 0.92rem !important;
+    transition: color 0.2s ease, padding 0.2s ease !important;
+}
+.footer-links-col ul li a:hover {
+    color: #fbbf24 !important;
+    padding-left: 5px !important;
+}
+.footer-newsletter p {
+    color: #cbd5e1 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+}
+.footer-input-wrap input {
+    background: #111827 !important;
+    border: 1.5px solid #374151 !important;
+    color: #ffffff !important;
+    font-size: 0.9rem !important;
+    padding: 10px 14px !important;
+}
+.footer-input-wrap button {
+    background: #d90429 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #94a3b8 !important;
+    padding-top: 24px !important;
+    margin-top: 40px !important;
+}
+.footer-bottom div {
+    color: #94a3b8 !important;
+}
+.footer-social-row a {
+    color: #cbd5e1 !important;
+    font-weight: 600 !important;
+    transition: color 0.2s ease !important;
+}
+.footer-social-row a:hover {
+    color: #fbbf24 !important;
+}
