@@ -7,7 +7,7 @@ const NCA_DATA = {
         kanji: "忍者戦闘道場",
         tagline: "The Ancient Art of the Shinobi. Forged for Modern Reality.",
         founder: "Ninja Dhruv",
-        credentials: "Black Belt 3rd Dan | Master of Traditional Japanese Systems & Tactical Combat",
+        credentials: "Black Belt 1st Dan | Master of Traditional Japanese Systems & Tactical Combat",
         phone: "+91 8865839038",
         whatsapp: "918865839038",
         email: "ninjadhruva@gmail.com",
@@ -412,7 +412,7 @@ const NCA_DATA = {
         },
         {
             q: "Are the belt ranks and certificates officially recognized?",
-            a: "Yes. Ninja Combat Academy awards official rank credentials authenticated by Sensei Ninja Dhruv (3rd Dan Black Belt), aligned with international Bujinkan-inspired standards and partner martial federations in India."
+            a: "Yes. Ninja Combat Academy awards official rank credentials authenticated by Sensei Ninja Dhruv (1st Dan Black Belt), aligned with international Bujinkan-inspired standards and partner martial federations in India."
         },
         {
             q: "Is Ninjutsu suitable for women's self-defense?",
@@ -431,7 +431,7 @@ const NCA_DATA = {
         },
         {
             keywords: ["founder", "teacher", "sensei", "master", "dhruv", "who"],
-            response: "Ninja Combat Academy is founded and mentored by Sensei Ninja Dhruv, a certified 3rd Dan Black Belt specializing in traditional Japanese warrior systems, classical Ninjutsu, Kenjutsu, and modern tactical combat."
+            response: "Ninja Combat Academy is founded and mentored by Sensei Ninja Dhruv, a certified 1st Dan Black Belt specializing in traditional Japanese warrior systems, classical Ninjutsu, Kenjutsu, and modern tactical combat."
         },
         {
             keywords: ["contact", "phone", "number", "whatsapp", "email", "call"],
