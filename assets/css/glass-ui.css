@@ -1,0 +1,1363 @@
+/* ============================================================
+   NINJA COMBAT ACADEMY - LUMINOUS WHITE FROSTED GLASS UI
+   Luxury Light Theme • Ultra-Clean Frosted Glass • Editorial Budo
+   ============================================================ */
+
+:root {
+    /* Theme Mode: Light Luxury White */
+    --theme-bg-body: #f8fafc;
+    --theme-bg-surface: #ffffff;
+    --theme-bg-subtle: #f1f5f9;
+    --theme-bg-alt: #f8fafc;
+    
+    /* Frosted White Glass Surfaces */
+    --glass-bg: rgba(255, 255, 255, 0.78);
+    --glass-bg-hover: rgba(255, 255, 255, 0.95);
+    --glass-bg-active: rgba(255, 255, 255, 1);
+    
+    --glass-border: rgba(226, 232, 240, 0.85);
+    --glass-border-hover: rgba(217, 4, 41, 0.4);
+    
+    --glass-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05), 0 4px 6px -2px rgba(15, 23, 42, 0.02);
+    --glass-shadow-hover: 0 20px 40px -10px rgba(15, 23, 42, 0.1), 0 0 25px rgba(217, 4, 41, 0.08);
+    --glass-inset: inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+
+    /* Editorial Typography Colors */
+    --text-onyx: #090d16;
+    --text-charcoal: #1e293b;
+    --text-slate: #475569;
+    --text-muted: #64748b;
+    
+    /* Martial Accents */
+    --crimson: #d90429;
+    --crimson-dark: #b00020;
+    --crimson-soft: rgba(217, 4, 41, 0.08);
+    --crimson-border: rgba(217, 4, 41, 0.25);
+    
+    --gold: #b45309;
+    --gold-bright: #d97706;
+    --gold-soft: rgba(217, 119, 6, 0.08);
+    --gold-border: rgba(217, 119, 6, 0.3);
+
+    --emerald: #059669;
+    --emerald-soft: rgba(5, 150, 105, 0.1);
+}
+
+/* Base Light Body & Ambient Atmosphere */
+html {
+    background-color: var(--theme-bg-body) !important;
+    color: var(--text-charcoal) !important;
+}
+
+body {
+    background: radial-gradient(circle at 15% 15%, rgba(217, 4, 41, 0.02) 0%, transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(217, 119, 6, 0.03) 0%, transparent 45%),
+                var(--theme-bg-body) !important;
+    color: var(--text-charcoal) !important;
+}
+
+/* Clean Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Global Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-onyx) !important;
+    font-family: 'Cinzel', serif !important;
+    letter-spacing: -0.01em;
+}
+
+p, span, li, label {
+    color: var(--text-slate);
+}
+
+strong, b {
+    color: var(--text-onyx);
+}
+
+a {
+    color: var(--crimson);
+}
+
+/* Section Containers & Headers */
+.section-tag {
+    background: var(--crimson-soft) !important;
+    color: var(--crimson) !important;
+    border: 1px solid var(--crimson-border) !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.12em !important;
+}
+
+.section-title {
+    color: var(--text-onyx) !important;
+}
+
+.section-title span {
+    color: var(--crimson) !important;
+}
+
+.section-desc {
+    color: var(--text-slate) !important;
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+}
+
+/* ============================================================
+   FROSTED WHITE GLASS PANEL SYSTEM
+   ============================================================ */
+.glass-panel,
+.discipline-card,
+.pricing-card,
+.kuji-card,
+.network-node-card,
+.testimonial-card,
+.location-card,
+.pillar-card,
+.cadence-box,
+.reflex-box,
+.weapon-detail-card,
+.belt-detail-card,
+.hero-feature-card,
+.showcase-video-card,
+.video-scrubber-card,
+.analyzer-notes-card,
+.radar-canvas-wrap,
+.iq-sliders-card,
+.vip-perks-card,
+.vip-apply-card,
+.tour-display-card {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(24px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+    border: 1px solid var(--glass-border) !important;
+    box-shadow: var(--glass-shadow), var(--glass-inset) !important;
+    border-radius: 16px !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Specular Shimmer Sweep on Light Glass */
+.glass-panel::before,
+.discipline-card::before,
+.kuji-card::before,
+.vip-perks-card::before,
+.tour-display-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+    transform: skewX(-25deg);
+    pointer-events: none;
+    transition: left 0.75s ease;
+}
+
+/* Dynamic Hover State: Lift, White Glow, Subtle Red Rim */
+.glass-panel:hover,
+.discipline-card:hover,
+.kuji-card:hover,
+.network-node-card:hover,
+.testimonial-card:hover,
+.location-card:hover,
+.pillar-card:hover,
+.weapon-detail-card:hover,
+.belt-detail-card:hover,
+.hero-feature-card:hover,
+.vip-perks-card:hover,
+.tour-display-card:hover {
+    background: var(--glass-bg-hover) !important;
+    border-color: var(--glass-border-hover) !important;
+    box-shadow: var(--glass-shadow-hover), inset 0 1px 2px #ffffff !important;
+    transform: translateY(-5px) !important;
+}
+
+.glass-panel:hover::before,
+.discipline-card:hover::before,
+.kuji-card:hover::before,
+.vip-perks-card:hover::before,
+.tour-display-card:hover::before {
+    left: 150%;
+}
+
+/* Buttons on Light Theme */
+.btn-primary {
+    background: linear-gradient(135deg, #d90429 0%, #b00020 100%) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 6px 20px rgba(217, 4, 41, 0.25) !important;
+    font-weight: 700 !important;
+}
+.btn-primary, .btn-primary *, .btn-primary span {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+.btn-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 28px rgba(217, 4, 41, 0.35) !important;
+}
+
+.hero-lead strong {
+    color: var(--text-onyx) !important;
+    font-weight: 800 !important;
+}
+
+.btn-secondary {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    color: var(--text-onyx) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+    font-weight: 700 !important;
+}
+.btn-secondary:hover {
+    background: #f8fafc !important;
+    border-color: #94a3b8 !important;
+    transform: translateY(-2px) !important;
+}
+
+.btn-outline {
+    background: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid #cbd5e1 !important;
+    color: var(--text-charcoal) !important;
+    font-weight: 600 !important;
+}
+.btn-outline:hover {
+    background: #ffffff !important;
+    border-color: var(--crimson) !important;
+    color: var(--crimson) !important;
+}
+
+/* ============================================================
+   1. TOP ANNOUNCEMENT BAR & VISOR CONTROLS
+   ============================================================ */
+.top-announcement-bar {
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
+    color: var(--text-slate) !important;
+}
+.top-item strong {
+    color: var(--text-onyx) !important;
+}
+.top-item a {
+    color: var(--crimson) !important;
+    font-weight: 700 !important;
+}
+.badge-live-pulse {
+    background: rgba(217, 4, 41, 0.1) !important;
+    color: var(--crimson) !important;
+    border: 1px solid rgba(217, 4, 41, 0.25) !important;
+}
+.pulse-dot {
+    background: var(--crimson) !important;
+}
+.vision-bar-label {
+    color: var(--text-slate) !important;
+    font-weight: 700 !important;
+}
+.vision-mode-pill {
+    background: #f1f5f9 !important;
+    border: 1px solid #e2e8f0 !important;
+    color: var(--text-slate) !important;
+    font-weight: 600 !important;
+}
+.vision-mode-pill:hover {
+    background: #e2e8f0 !important;
+    color: var(--text-onyx) !important;
+}
+.vision-mode-pill.active {
+    background: var(--crimson) !important;
+    border-color: var(--crimson) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(217, 4, 41, 0.3) !important;
+}
+.sound-btn {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: var(--text-slate) !important;
+    font-weight: 600 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+.sound-btn:hover {
+    background: #f8fafc !important;
+    color: var(--crimson) !important;
+    border-color: #cbd5e1 !important;
+}
+.sound-btn.active {
+    background: rgba(217, 4, 41, 0.08) !important;
+    border-color: var(--crimson) !important;
+    color: var(--crimson) !important;
+}
+
+/* ============================================================
+   2. MAIN NAVIGATION
+   ============================================================ */
+.navbar {
+    background: rgba(255, 255, 255, 0.88) !important;
+    backdrop-filter: blur(24px) saturate(180%) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.85) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+}
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06) !important;
+}
+.brand-text h1 {
+    color: var(--text-onyx) !important;
+}
+.brand-text h1 span {
+    color: var(--crimson) !important;
+}
+.brand-sub {
+    color: var(--text-muted) !important;
+}
+.nav-link {
+    color: var(--text-charcoal) !important;
+    font-weight: 600 !important;
+}
+.nav-link:hover {
+    color: var(--crimson) !important;
+}
+
+/* ============================================================
+   3. HERO SECTION (Clean Luminous Atmosphere)
+   ============================================================ */
+.hero-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
+    min-height: 720px;
+}
+.hero-overlay-gradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(248, 250, 252, 0.9) 100%) !important;
+}
+.hero-badge {
+    background: rgba(217, 4, 41, 0.08) !important;
+    border: 1px solid rgba(217, 4, 41, 0.25) !important;
+    color: var(--crimson) !important;
+    font-weight: 800 !important;
+}
+.hero-title .text-gradient {
+    color: var(--text-onyx) !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+}
+.hero-title .text-highlight {
+    color: var(--crimson) !important;
+}
+.hero-lead {
+    color: var(--text-slate) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.75 !important;
+}
+.hero-stats-row .stat-box {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+    padding: 18px 20px !important;
+    border-radius: var(--radius-md) !important;
+}
+.stat-number {
+    color: var(--text-onyx) !important;
+    font-family: 'Cinzel', serif !important;
+    line-height: 1.25 !important;
+    margin-bottom: 6px !important;
+}
+.stat-label {
+    color: var(--text-muted) !important;
+}
+.hero-card-info h3 {
+    color: var(--text-onyx) !important;
+    font-size: 1.35rem !important;
+}
+.hero-card-info p {
+    color: var(--text-slate) !important;
+}
+.meta-verified {
+    color: var(--emerald) !important;
+    font-weight: 700 !important;
+}
+.hero-card-badge {
+    background: var(--crimson) !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+
+/* ============================================================
+   4. FOUNDER SECTION (Sensei Ninja Dhruv)
+   ============================================================ */
+.founder-section {
+    background: #ffffff !important;
+}
+.founder-role-title {
+    color: var(--gold) !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.08em;
+}
+.founder-quote-box {
+    background: rgba(217, 4, 41, 0.04) !important;
+    border-left: 4px solid var(--crimson) !important;
+    color: var(--text-charcoal) !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    border-radius: 0 12px 12px 0;
+}
+.founder-img-card {
+    border: 2px solid rgba(217, 4, 41, 0.25) !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08) !important;
+}
+.founder-badge-rank {
+    background: rgba(255, 255, 255, 0.94) !important;
+    border: 1px solid var(--gold-border) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+.founder-rank-name {
+    color: var(--text-onyx) !important;
+}
+.founder-rank-dan {
+    color: var(--gold) !important;
+}
+.pillar-card {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid #e2e8f0 !important;
+}
+.pillar-card h4 {
+    color: var(--text-onyx) !important;
+    font-size: 1.05rem !important;
+}
+.pillar-card p {
+    color: var(--text-slate) !important;
+    font-size: 0.88rem !important;
+}
+
+/* ============================================================
+   5. 18 DISCIPLINES SECTION
+   ============================================================ */
+.disciplines-section {
+    background: var(--theme-bg-body) !important;
+}
+.discipline-card {
+    border: 1px solid #e2e8f0 !important;
+}
+.discipline-card h3 {
+    color: var(--text-onyx) !important;
+    font-size: 1.25rem !important;
+}
+.disc-kanji {
+    color: rgba(217, 4, 41, 0.2) !important;
+}
+.discipline-card p {
+    color: var(--text-slate) !important;
+}
+.disc-badge {
+    background: var(--crimson-soft) !important;
+    color: var(--crimson) !important;
+    border: 1px solid var(--crimson-border) !important;
+    font-weight: 700 !important;
+}
+
+/* ============================================================
+   6. 3D SHINOBI FORGE & BLADE GAME SECTIONS
+   ============================================================ */
+.armory-section {
+    background: #ffffff !important;
+}
+.armory-section .section-title {
+    color: var(--text-onyx) !important;
+}
+.armory-section .section-desc {
+    color: var(--text-slate) !important;
+}
+.weapon-card, .armory-card, #weapon-detail-view {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+}
+.weapon-tab {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: var(--text-onyx) !important;
+}
+.weapon-tab.active {
+    border-color: var(--crimson) !important;
+    color: var(--crimson) !important;
+}
+
+.forge-section {
+    background: #ffffff !important;
+}
+.armory-viewport-card {
+    background: #0f1422 !important; /* Retain dark 3D forge background so metal shaders and glows pop */
+    border: 1px solid #334155 !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12) !important;
+}
+.blade-arena-section {
+    background: var(--theme-bg-body) !important;
+    padding: 90px 0 !important;
+}
+.blade-arena-section .section-title {
+    color: var(--text-onyx) !important;
+}
+.blade-arena-section .section-desc {
+    color: var(--text-slate) !important;
+}
+.blade-arena-box {
+    background: #090d16 !important; /* Retain dark arcade canvas */
+    border: 1px solid rgba(226, 232, 240, 0.9) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08) !important;
+    border-radius: var(--radius-md) !important;
+}
+.blade-arena-box .blade-hud-item {
+    color: #94a3b8 !important;
+}
+.blade-arena-box .blade-instructions-text {
+    color: #cbd5e1 !important;
+}
+.blade-arena-box .blade-instructions-text span {
+    color: #fbbf24 !important;
+}
+.game-canvas-card {
+    background: #0b0f19 !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12) !important;
+}
+
+.modes-section {
+    background: #ffffff !important;
+}
+.modes-section .section-title {
+    color: var(--text-onyx) !important;
+}
+.modes-section .section-desc {
+    color: var(--text-slate) !important;
+}
+.mode-card {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+}
+.mode-card h3 {
+    color: var(--text-onyx) !important;
+}
+.mode-lead {
+    color: var(--gold) !important;
+    font-weight: 700 !important;
+}
+.mode-features-list li {
+    color: var(--text-slate) !important;
+}
+
+/* ============================================================
+   7. 9 KUJI-IN MUDRAS & RANK PATH
+   ============================================================ */
+.kuji-section {
+    background: #ffffff !important;
+}
+.kuji-card {
+    border: 1px solid #e2e8f0 !important;
+}
+.kuji-kanji {
+    color: var(--crimson) !important;
+}
+.kuji-name {
+    color: var(--text-onyx) !important;
+}
+.kuji-meaning {
+    color: var(--gold) !important;
+    font-weight: 700 !important;
+}
+.kuji-desc {
+    color: var(--text-slate) !important;
+}
+.belts-section {
+    background: var(--theme-bg-body) !important;
+}
+.belt-node {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+}
+.belt-node h4 {
+    color: var(--text-onyx) !important;
+}
+.belt-node p {
+    color: var(--text-slate) !important;
+}
+
+/* ============================================================
+   8. SHOWCASE GALLERY
+   ============================================================ */
+.showcase-section {
+    background: #ffffff !important;
+}
+.gallery-item {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.35s ease;
+}
+.gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: var(--crimson);
+}
+.gallery-overlay {
+    background: linear-gradient(180deg, transparent 40%, rgba(9, 13, 22, 0.85) 100%) !important;
+}
+.gallery-caption {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* ============================================================
+   9. VIP SELECTIVE ADMISSION & MENTORSHIP AUDITION
+   ============================================================ */
+.vip-admission-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
+    padding: 100px 0;
+}
+.vip-grid {
+    display: grid !important;
+    grid-template-columns: 1.15fr 0.85fr !important;
+    gap: 40px !important;
+    align-items: center !important;
+}
+.vip-perks-card {
+    padding: 42px;
+    border: 1px solid rgba(217, 119, 6, 0.3) !important;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05) !important;
+}
+.vip-perks-card p {
+    color: #334155 !important;
+    font-size: 0.98rem !important;
+    line-height: 1.65 !important;
+}
+.vip-badge-gold {
+    background: var(--gold-soft) !important;
+    border: 1px solid var(--gold-border) !important;
+    color: var(--gold) !important;
+    font-weight: 800;
+}
+.vip-perks-card h3 {
+    font-size: 2rem !important;
+    margin-bottom: 14px !important;
+    color: var(--text-onyx) !important;
+}
+.vip-perks-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    margin: 24px 0 !important;
+}
+.vip-perk-item {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px;
+    padding: 16px 20px;
+}
+.vip-perk-item strong {
+    color: var(--text-onyx) !important;
+    font-size: 1rem !important;
+}
+.vip-perk-item p {
+    color: var(--text-slate) !important;
+    font-size: 0.88rem !important;
+}
+.vip-apply-card {
+    padding: 42px;
+    background: #ffffff !important;
+    border: 1px solid var(--crimson-border) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06) !important;
+}
+.vip-apply-header h3 {
+    color: var(--text-onyx) !important;
+}
+.vip-apply-card label {
+    color: var(--text-onyx) !important;
+    font-weight: 700 !important;
+    font-size: 0.85rem !important;
+}
+.vip-apply-card input,
+.vip-apply-card select,
+.vip-apply-card textarea {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    color: var(--text-onyx) !important;
+    border-radius: 10px !important;
+    padding: 14px 16px !important;
+    font-size: 0.92rem !important;
+}
+.vip-apply-card input:focus,
+.vip-apply-card select:focus,
+.vip-apply-card textarea:focus {
+    border-color: var(--crimson) !important;
+    background: #ffffff !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(217, 4, 41, 0.1) !important;
+}
+
+/* ============================================================
+   10. 360° HONBU DOJO VIRTUAL TATAMI TOUR
+   ============================================================ */
+.dojo-tour-section {
+    background: #ffffff !important;
+    padding: 100px 0;
+}
+.tour-layout {
+    display: grid !important;
+    grid-template-columns: 320px 1fr !important;
+    gap: 36px !important;
+    align-items: start !important;
+}
+.tour-rooms-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+.tour-room-btn {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    color: var(--text-charcoal) !important;
+    border-radius: 12px;
+    padding: 16px 20px !important;
+}
+.tour-room-btn:hover {
+    background: #ffffff !important;
+    border-color: var(--crimson) !important;
+    transform: translateX(6px);
+}
+.tour-room-btn.active {
+    background: #ffffff !important;
+    border-color: var(--crimson) !important;
+    color: var(--crimson) !important;
+    box-shadow: 0 8px 25px rgba(217, 4, 41, 0.12) !important;
+    transform: translateX(6px);
+}
+.tour-room-btn.active .room-btn-title {
+    color: var(--crimson) !important;
+}
+.room-btn-title {
+    color: var(--text-onyx) !important;
+}
+.room-btn-sub {
+    color: var(--text-muted) !important;
+}
+.tour-display-card {
+    padding: 28px;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05) !important;
+}
+.tour-image-viewport {
+    position: relative !important;
+    border-radius: var(--radius-md) !important;
+    overflow: hidden !important;
+    background: #000000 !important;
+    margin-bottom: 20px;
+}
+.tour-image-viewport img {
+    width: 100% !important;
+    height: 420px !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+.tour-hotspot {
+    position: absolute !important;
+    transform: translate(-50%, -50%) !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    background: #d90429 !important;
+    color: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.85rem !important;
+    cursor: pointer !important;
+    box-shadow: 0 0 15px rgba(217, 4, 41, 0.8) !important;
+    border: 2px solid #ffffff !important;
+    animation: hotspotPulse 2s infinite ease-in-out !important;
+    transition: transform 0.25s ease, background 0.25s ease !important;
+    z-index: 10 !important;
+}
+.tour-hotspot:hover {
+    transform: translate(-50%, -50%) scale(1.3) !important;
+    background: #b45309 !important;
+}
+@keyframes hotspotPulse {
+    0% { box-shadow: 0 0 0 0 rgba(217, 4, 41, 0.7); }
+    70% { box-shadow: 0 0 0 14px rgba(217, 4, 41, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(217, 4, 41, 0); }
+}
+.tour-spec-pill {
+    background: var(--gold-soft) !important;
+    border: 1px solid var(--gold-border) !important;
+    color: var(--gold) !important;
+    font-weight: 700 !important;
+}
+.tour-room-details h3 {
+    color: var(--text-onyx) !important;
+}
+.tour-room-details p {
+    color: var(--text-slate) !important;
+}
+
+/* ============================================================
+   11. KATA BIOMECHANICS VIDEO ANALYZER
+   ============================================================ */
+.analyzer-section {
+    background: var(--theme-bg-body) !important;
+    padding: 100px 0;
+}
+.analyzer-box {
+    display: grid !important;
+    grid-template-columns: 1.2fr 0.8fr !important;
+    gap: 36px !important;
+    align-items: start !important;
+}
+.video-scrubber-card {
+    border: 1px solid #e2e8f0 !important;
+    padding: 24px;
+}
+.scrub-speed-btns {
+    display: inline-flex !important;
+    background: rgba(15, 23, 42, 0.05) !important;
+    border: 1px solid rgba(226, 232, 240, 0.9) !important;
+    border-radius: 8px !important;
+    padding: 3px !important;
+    gap: 4px !important;
+}
+.scrub-speed-btn {
+    border: none !important;
+    background: transparent !important;
+    padding: 5px 12px !important;
+    font-size: 0.76rem !important;
+    font-weight: 700 !important;
+    color: var(--text-slate) !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+.scrub-speed-btn:hover {
+    color: var(--text-onyx) !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+.scrub-speed-btn.active {
+    background: #ffffff !important;
+    color: var(--crimson) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+.analyzer-notes-card h3 {
+    color: var(--text-onyx) !important;
+}
+.analyzer-notes-card p {
+    color: var(--text-slate) !important;
+}
+.biomechanics-item {
+    background: #ffffff !important;
+    border-left: 4px solid var(--crimson) !important;
+    border: 1px solid #e2e8f0;
+    border-left-width: 4px;
+    color: var(--text-slate) !important;
+    padding: 14px 18px;
+    border-radius: 0 12px 12px 0;
+}
+.biomechanics-item strong {
+    color: var(--text-onyx) !important;
+    font-size: 0.95rem !important;
+}
+
+/* ============================================================
+   12. 5-AXIS WARRIOR COMBAT APTITUDE RADAR
+   ============================================================ */
+.iq-section {
+    background: #ffffff !important;
+    padding: 100px 0;
+}
+.iq-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 36px !important;
+    align-items: center !important;
+}
+.radar-canvas-wrap {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04) !important;
+}
+.iq-sliders-card {
+    padding: 38px;
+    border: 1px solid #e2e8f0 !important;
+}
+.iq-sliders-card h3 {
+    color: var(--text-onyx) !important;
+}
+.slider-header {
+    color: var(--text-onyx) !important;
+    font-weight: 700;
+}
+.slider-val {
+    color: var(--crimson) !important;
+    font-weight: 800 !important;
+}
+.iq-range-input {
+    accent-color: var(--crimson);
+}
+.iq-score-display {
+    background: rgba(217, 4, 41, 0.05) !important;
+    border: 1px solid var(--crimson-border) !important;
+    border-radius: 14px;
+}
+#iq-composite-score {
+    color: var(--crimson) !important;
+    font-size: 2.2rem !important;
+}
+#iq-composite-tier {
+    color: var(--gold) !important;
+    font-weight: 800 !important;
+}
+
+/* ============================================================
+   13. VERIFIABLE BLACK BELT DAN REGISTRY
+   ============================================================ */
+.registry-section {
+    background: var(--theme-bg-body) !important;
+    padding: 100px 0;
+}
+.registry-search-bar {
+    max-width: 680px !important;
+    margin: 0 auto 36px auto !important;
+    width: 100% !important;
+}
+.registry-search-bar input {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    color: var(--text-onyx) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 12px !important;
+    padding: 16px 20px !important;
+    width: 100% !important;
+}
+.registry-search-bar input:focus {
+    border-color: var(--crimson) !important;
+    box-shadow: 0 0 0 3px rgba(217, 4, 41, 0.1) !important;
+}
+.registry-table-wrap {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 16px;
+    overflow-x: auto;
+}
+.registry-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+}
+.registry-table th {
+    background: #f8fafc !important;
+    color: var(--text-onyx) !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    font-weight: 800 !important;
+    padding: 16px 20px !important;
+}
+.registry-table td {
+    color: var(--text-charcoal) !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    padding: 16px 20px !important;
+}
+.registry-table th:nth-child(1), .registry-table td:nth-child(1) { width: 24%; }
+.registry-table th:nth-child(2), .registry-table td:nth-child(2) { width: 24%; }
+.registry-table th:nth-child(3), .registry-table td:nth-child(3) { width: 14%; }
+.registry-table th:nth-child(4), .registry-table td:nth-child(4) { width: 22%; }
+.registry-table th:nth-child(5), .registry-table td:nth-child(5) { width: 16%; }
+.registry-table tr:hover td {
+    background: #f8fafc !important;
+    color: var(--text-onyx) !important;
+}
+.hash-badge {
+    background: #f1f5f9 !important;
+    color: #0284c7 !important;
+    border: 1px solid #e2e8f0 !important;
+    font-weight: 700;
+}
+
+/* ============================================================
+   14. LOCATION, CONTACT & FAQ
+   ============================================================ */
+.location-section, .faq-section, .reviews-section {
+    background: #ffffff !important;
+}
+.location-card h3 {
+    color: var(--text-onyx) !important;
+}
+.loc-item strong {
+    color: var(--text-onyx) !important;
+}
+.loc-item span {
+    color: var(--text-slate) !important;
+}
+.faq-item {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px;
+}
+.faq-question {
+    color: var(--text-onyx) !important;
+    font-weight: 700 !important;
+}
+.faq-answer p {
+    color: var(--text-slate) !important;
+}
+
+/* ============================================================
+   15. FOOTER (Grounded Dark Slate Luxury Foundation)
+   ============================================================ */
+.footer-section {
+    background: #090d16 !important;
+    color: #cbd5e1 !important;
+}
+.footer-brand h3 {
+    color: #ffffff !important;
+}
+.footer-links-col h4 {
+    color: #ffd166 !important;
+}
+.footer-links-col a {
+    color: #94a3b8 !important;
+}
+.footer-links-col a:hover {
+    color: #ffffff !important;
+}
+.footer-bottom {
+    border-top: 1px solid #1e293b !important;
+    color: #64748b !important;
+}
+
+/* ============================================================
+   16. SENSEI AI CHATBOT & BOOKING MODAL
+   ============================================================ */
+.sensei-chat-widget {
+    background: rgba(255, 255, 255, 0.98) !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+}
+.chat-header {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+}
+.chat-title-info h4 {
+    color: var(--text-onyx) !important;
+}
+.chat-msg.sensei .msg-bubble {
+    background: #f1f5f9 !important;
+    color: var(--text-onyx) !important;
+    border: 1px solid #e2e8f0 !important;
+}
+.chat-msg.user .msg-bubble {
+    background: var(--crimson) !important;
+    color: #ffffff !important;
+}
+.prompt-chip {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    color: var(--text-charcoal) !important;
+}
+.prompt-chip:hover {
+    background: var(--crimson) !important;
+    color: #ffffff !important;
+    border-color: var(--crimson) !important;
+}
+.chat-input-bar {
+    background: #f8fafc !important;
+    border-top: 1px solid #e2e8f0 !important;
+}
+.chat-input-bar input {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    color: var(--text-onyx) !important;
+}
+.modal-container {
+    background: rgba(255, 255, 255, 0.98) !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2) !important;
+}
+.modal-title {
+    color: var(--text-onyx) !important;
+}
+.modal-subtitle {
+    color: var(--text-slate) !important;
+}
+.booking-form label {
+    color: var(--text-onyx) !important;
+    font-weight: 700 !important;
+}
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    color: var(--text-onyx) !important;
+}
+
+/* Additional Sections for Cohesive Light Theme */
+.virtues-section,
+.belts-section,
+.quiz-section {
+    background: var(--theme-bg-body) !important;
+}
+.schedule-section,
+.global-network-section,
+.pavilion-section {
+    background: #ffffff !important;
+}
+
+.virtue-card {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+    border-radius: 14px;
+    padding: 24px;
+}
+.virtue-card h4 {
+    color: var(--text-onyx) !important;
+}
+.virtue-card p {
+    color: var(--text-slate) !important;
+}
+
+.schedule-table-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.schedule-table th {
+    background: #f8fafc !important;
+    color: var(--text-onyx) !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+}
+.schedule-table td {
+    color: var(--text-charcoal) !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.network-node-card {
+    background: rgba(255, 255, 255, 0.88) !important;
+    border: 1px solid #e2e8f0 !important;
+}
+.network-node-card h4 {
+    color: var(--text-onyx) !important;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 14px;
+}
+.testimonial-card h4 {
+    color: var(--text-onyx) !important;
+}
+.testimonial-card p {
+    color: var(--text-slate) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+    .vip-grid { grid-template-columns: 1fr !important; }
+    .tour-layout { grid-template-columns: 1fr !important; }
+    .analyzer-box { grid-template-columns: 1fr !important; }
+    .iq-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ============================================================
+   16. ANTI-OVERLAP & MULTI-VIEWPORT TYPOGRAPHIC ALIGNMENT
+   ============================================================ */
+/* 1. Hero Title Stacking */
+.hero-title {
+    line-height: 1.25 !important;
+}
+.hero-title .text-gradient,
+.hero-title .text-highlight {
+    display: block !important;
+    line-height: 1.25 !important;
+    margin-bottom: 6px !important;
+}
+
+/* 2. Founder Photo Rank Badge Stacking */
+.founder-badge-rank {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+.founder-badge-rank > div {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 3px !important;
+}
+.founder-rank-name {
+    display: block !important;
+    font-size: 1.15rem !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+}
+.founder-rank-dan {
+    display: block !important;
+    font-size: 0.85rem !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+}
+
+/* 3. Training Modes Badges */
+.mode-card {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+.mode-card .mode-badge {
+    position: static !important;
+    display: inline-block !important;
+    margin-bottom: 16px !important;
+}
+.mode-card h3 {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+    line-height: 1.3 !important;
+}
+
+/* 4. Kata Biomechanics Breakdown Items */
+.biomechanics-item {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+}
+.biomechanics-item strong {
+    display: block !important;
+    color: var(--text-onyx) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.3 !important;
+}
+.biomechanics-item span {
+    display: block !important;
+    color: var(--text-slate) !important;
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+}
+
+/* 5. 360 Dojo Tour Room Buttons */
+.tour-room-btn {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+}
+.tour-room-btn > div {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 3px !important;
+}
+.room-btn-title {
+    display: block !important;
+    color: var(--text-onyx) !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.3 !important;
+}
+.room-btn-sub {
+    display: block !important;
+    color: var(--text-muted) !important;
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+}
+
+/* 6. Kata Analyzer Telemetry HUD Bar */
+.analyzer-telemetry-hud {
+    padding: 12px 16px !important;
+}
+.analyzer-telemetry-hud > div {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px 14px !important;
+    align-items: center !important;
+}
+.analyzer-telemetry-hud span {
+    display: inline-block !important;
+    white-space: nowrap !important;
+}
+
+/* 7. Dan Registry Table & Schedule Day Badge */
+.registry-table-wrap {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+.registry-table {
+    min-width: 860px !important;
+    width: 100% !important;
+    table-layout: auto !important;
+    border-collapse: collapse !important;
+}
+.registry-table th,
+.registry-table td {
+    white-space: nowrap !important;
+    padding: 16px 20px !important;
+    font-size: 0.88rem !important;
+    text-align: left !important;
+}
+.registry-table th {
+    min-width: 120px !important;
+}
+.schedule-day-badge {
+    min-width: 110px !important;
+    padding: 10px 8px !important;
+    flex-shrink: 0 !important;
+}
+.sched-day {
+    display: block !important;
+    font-size: 0.88rem !important;
+    white-space: nowrap !important;
+}
+
+/* 8. 360 Tour Specs Badges & Blade Slicer Instructions */
+.tour-specs-badges {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px 10px !important;
+    margin: 14px 0 16px 0 !important;
+}
+.tour-spec-pill {
+    display: inline-flex !important;
+    align-items: center !important;
+    background: var(--gold-soft) !important;
+    border: 1px solid var(--gold-border) !important;
+    color: var(--gold) !important;
+    font-weight: 700 !important;
+    font-size: 0.82rem !important;
+    padding: 6px 12px !important;
+    border-radius: 20px !important;
+    white-space: nowrap !important;
+}
+.blade-instructions-text {
+    line-height: 1.85 !important;
+    display: block !important;
+}
+.blade-instructions-text strong,
+.blade-instructions-text span {
+    display: inline-block !important;
+    line-height: 1.4 !important;
+    vertical-align: middle !important;
+}

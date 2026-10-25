@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Combat Academy | Authentic Ninjutsu, Kenjutsu & Tactical Self-Defense</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Ninja Combat Academy - Founded by Sensei Ninja Dhruv (3rd Dan Black Belt). Train authentic Japanese Ninjutsu, Kenjutsu sword, Taijutsu, and modern tactical combat survival. In-person at Mathura Honbu Dojo and live online worldwide.">
+    <meta name="keywords" content="Ninja Combat Academy, Ninjutsu classes, Ninja Dhruv, Martial Arts Mathura, Kenjutsu sword training, Taijutsu, Shinobijutsu, Japanese martial arts India, online ninja training">
+    <meta name="author" content="Sensei Ninja Dhruv">
+    
+    <!-- Open Graph / Social Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ninja Combat Academy | The Ancient Art of the Shinobi">
+    <meta property="og:description" content="Master authentic Ninjutsu, Kenjutsu, and modern tactical combat. Train live online worldwide or at the Mathura Honbu Dojo under Sensei Ninja Dhruv (3rd Dan Black Belt).">
+    <meta property="og:image" content="assets/images/hero_katana_v2.jpg">
+    <meta property="og:url" content="https://ninjacombatacademy.in">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/glass-ui.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsClub",
+      "name": "Ninja Combat Academy",
+      "image": "assets/images/logo.png",
+      "telephone": "+91 8865839038",
+      "email": "ninjadhruva@gmail.com",
+      "url": "https://ninjacombatacademy.in",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Om Nagar Colony, Near Lakhan Halwai",
+        "addressLocality": "Mathura",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "281001",
+        "addressCountry": "IN"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Ninja Dhruv",
+        "jobTitle": "Headmaster & 3rd Dan Black Belt"
+      },
+      "sport": "Ninjutsu, Kenjutsu, Taijutsu, Martial Arts"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- 1. TOP ANNOUNCEMENT & TACTICAL VISION BAR -->
+    <div class="top-announcement-bar">
+        <div class="container top-bar-inner">
+            <div class="top-left-info">
+                <span class="badge-live-pulse"><span class="pulse-dot"></span> NOW ENROLLING</span>
+                <span class="top-item">🥋 <strong>Honbu Dojo:</strong> Mathura, UP (Om Nagar Colony)</span>
+                <span class="top-item">🌐 <strong>Global Dojo:</strong> Live Zoom Batches Active</span>
+                <span class="top-item">📞 <strong>Direct Line:</strong> <a href="tel:+918865839038">+91 8865839038</a></span>
+            </div>
+            <div class="top-right-controls">
+                <!-- Tactical Vision Mode Switcher -->
+                <div class="vision-bar-wrap">
+                    <span class="vision-bar-label">👁️ Visor:</span>
+                    <button class="vision-mode-pill active" data-vision="standard">Normal</button>
+                    <button class="vision-mode-pill" data-vision="nvg">NVG 4G</button>
+                    <button class="vision-mode-pill" data-vision="thermal">Thermal</button>
+                    <button class="vision-mode-pill" data-vision="sumie">Sumi-e</button>
+                    <button class="vision-mode-pill" data-vision="cyber">Cyber</button>
+                </div>
+
+                <button class="sound-btn" id="taiko-toggle-btn" title="Toggle Taiko War Drum Cadence">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+                    <span>Taiko Cadence</span>
+                </button>
+                <button class="sound-btn" id="ambient-toggle-btn" title="Toggle Meditative Dojo Ambience">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                    <span>Zen Ambient</span>
+                </button>
+                <button class="sound-btn" id="sound-toggle-btn" title="Toggle UI Sound Effects">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                    <span>Sound On</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. MAIN NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="brand-logo" aria-label="Ninja Combat Academy Home">
+                <div class="brand-mon">
+                    <img src="assets/images/logo.png" alt="Ninja Combat Academy Mon Crest" onerror="this.src='assets/images/favicon.png'">
+                </div>
+                <div class="brand-text">
+                    <h1>NINJA <span>COMBAT</span></h1>
+                    <span class="brand-sub">ACADEMY • 忍者武道館</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">The Academy</a></li>
+                <li><a href="#disciplines" class="nav-link">18 Disciplines</a></li>
+                <li><a href="#forge" class="nav-link" style="color: var(--gold-bright);">⚔️ 3D Forge</a></li>
+                <li><a href="#combat-game" class="nav-link" style="color: var(--crimson-bright);">⚡ Blade Slicer</a></li>
+                <li><a href="#vip-admission" class="nav-link" style="color: var(--gold-bright);">★ VIP Admission</a></li>
+                <li><a href="#dojo-tour" class="nav-link">360° Tour</a></li>
+                <li><a href="#kata-analyzer" class="nav-link">Analyzer</a></li>
+                <li><a href="#warrior-iq" class="nav-link">Warrior IQ</a></li>
+                <li><a href="#belt-registry" class="nav-link">Dan Registry</a></li>
+                <li><a href="#location" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn-outline trigger-smoke-bomb" title="Detonate Shinobi Smoke Bomb [Hotkey: S]" style="padding: 8px 12px; font-size: 0.82rem; border-color: rgba(217, 4, 41, 0.4); color: var(--crimson-bright);">
+                    <span>💨 Vanish [S]</span>
+                </button>
+                <button class="btn-primary btn-nav-trial trigger-booking" data-program="1-Day Free Trial Class">
+                    <span>Claim Free Trial</span>
+                </button>
+                <button class="btn-mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION -->
+    <header class="hero-section" id="hero">
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        <div class="hero-video-wrap">
+            <video class="hero-video-bg" autoplay muted loop playsinline poster="assets/images/ai_hero_katana_light.jpg">
+                <source src="assets/video/hero_ambient.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay-gradient"></div>
+        </div>
+
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>✦ OFFICIAL MATHURA HONBU DOJO & GLOBAL ACADEMY</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="text-gradient" style="display: block; line-height: 1.25; margin-bottom: 8px;">THE AUTHENTIC PATH OF THE SHINOBI.</span>
+                    <span class="text-highlight" style="display: block; line-height: 1.25;">FORGED FOR THE MODERN WORLD.</span>
+                </h1>
+                <p class="hero-lead">
+                    Direct personal lineage and instruction under <strong>Sensei Ninja Dhruv (3rd Dan Black Belt)</strong>. Master classical Ninjutsu 18 disciplines, Kenjutsu katana mastery, empty-hand Taijutsu, and pressure-tested tactical street survival. Train in-person at the Mathura Honbu Dojo or stream live worldwide.
+                </p>
+
+                <div class="hero-actions">
+                    <button class="btn-primary trigger-booking" data-program="1-Day Free Trial Session">
+                        <span>Claim 1-Day Free Trial</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <a href="#disciplines" class="btn-secondary">
+                        <span>Explore 18 Disciplines</span>
+                    </a>
+                    <a href="https://wa.me/918865839038?text=Hello%20Sensei%20Dhruv%2C%20I%20want%20to%20learn%20more%20about%20Ninja%20Combat%20Academy%20training." target="_blank" class="btn-outline">
+                        <span>💬 WhatsApp Sensei</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats-row">
+                    <div class="stat-box">
+                        <div class="stat-number">5,200+</div>
+                        <div class="stat-label">Warriors Trained Across India & Worldwide</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">18</div>
+                        <div class="stat-label">Classical Shinobi Jūhakkei Disciplines</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3rd Dan</div>
+                        <div class="stat-label">Black Belt Headmaster Lineage</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Pressure-Tested Self-Defense Efficacy</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-card-side">
+                <div class="hero-feature-card glass-panel">
+                    <div class="hero-card-img-wrap">
+                        <img src="assets/images/ai_hero_katana_light.jpg" alt="Master executing katana stance in bright bamboo courtyard" loading="eager">
+                        <span class="hero-card-badge">LIVE DOJO INDUCTION</span>
+                    </div>
+                    <div class="hero-card-info">
+                        <h3>Sensei Ninja Dhruv (3rd Dan)</h3>
+                        <p>Bridging Sengoku warrior traditions, silent evasion mechanics, and real-world tactical self-defense for everyday men, women, and youth.</p>
+                        <div class="hero-card-meta">
+                            <span class="meta-verified">✓ Verified Black Belt 3rd Dan</span>
+                            <span>📍 Mathura Honbu Dojo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4. ABOUT THE FOUNDER & HEADMASTER -->
+    <section class="founder-section" id="about">
+        <div class="container founder-grid">
+            <div class="founder-visual">
+                <div class="founder-img-card">
+                    <img src="assets/images/ai_founder_sensei_light.jpg" alt="Sensei Ninja Dhruv 3rd Dan Headmaster" loading="eager">
+                    <div class="founder-badge-rank">
+                        <div style="display: flex; flex-direction: column; gap: 4px;">
+                            <strong class="founder-rank-name" style="display: block; line-height: 1.25;">Sensei Ninja Dhruv</strong>
+                            <span class="founder-rank-dan" style="display: block; line-height: 1.25;">Headmaster • 3rd Dan Black Belt</span>
+                        </div>
+                        <span style="font-family: var(--font-kanji); font-size: 1.8rem; color: var(--gold-bright);">師範</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="founder-details">
+                <div class="section-tag">✦ FOUNDER & CHIEF INSTRUCTOR</div>
+                <h2>The Mind Behind the Blade</h2>
+                <span class="founder-role-title">SENSEI NINJA DHRUV (BLACK BELT 3RD DAN)</span>
+                
+                <div class="founder-quote-box">
+                    "True Ninjutsu is not violence; it is the art of surviving, enduring, and remaining centered when chaos surrounds you. In the ancient texts, 'Nin' (忍) means perseverance under the edge of a blade. We don't build reckless fighters—we forge disciplined, unstoppable human spirits."
+                </div>
+
+                <p style="margin-bottom: 24px; font-size: 0.96rem; line-height: 1.7;">
+                    With over a decade of continuous study across classical Japanese warrior systems (Bujinkan-inspired traditions), classical Kenjutsu, and modern tactical combat systems, Ninja Dhruv established the Ninja Combat Academy to strip away Hollywood myths and deliver authentic, battle-tested warrior development.
+                </p>
+
+                <div class="founder-pillars-grid">
+                    <div class="pillar-card">
+                        <h4>⚔️ Authentic Lineage Synthesis</h4>
+                        <p>Preserving the historical 18 disciplines of the Iga and Kōga clans adapted for modern physical safety.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h4>🧠 Fudōshin (Immovable Mind)</h4>
+                        <p>Eliminating freeze responses, panic, and emotional instability under high-stress combat encounters.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h4>🛡️ Reality-Based Protection</h4>
+                        <p>Every joint lock, strike, roll, and evade is pressure-tested against realistic aggressive attackers.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h4>🌱 Inclusive Dojo Culture</h4>
+                        <p>Structured, ego-free growth pathways for beginners, working professionals, women, and kids.</p>
+                    </div>
+                </div>
+
+                <button class="btn-primary trigger-booking" data-program="Induction Consultation with Sensei Dhruv">
+                    <span>Book Private Consultation with Sensei</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 18 CLASSICAL DISCIPLINES (NINJA JŪHAKKEI) -->
+    <section class="disciplines-section" id="disciplines">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ THE CLASSICAL CURRICULUM</div>
+                <h2 class="section-title">The 18 Classical & Tactical <span>Disciplines</span></h2>
+                <p class="section-desc">
+                    Historically known as <em>Ninja Jūhakkei</em> (忍者十八形), our syllabus blends traditional Japanese combat arts with modern street-tested personal defense and mental conditioning.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="disciplines-filter-bar">
+                <button class="discipline-filter-btn active" data-filter="all">All Disciplines</button>
+                <button class="discipline-filter-btn" data-filter="unarmed">Unarmed Taijutsu</button>
+                <button class="discipline-filter-btn" data-filter="bladed">Kenjutsu & Blades</button>
+                <button class="discipline-filter-btn" data-filter="stealth">Stealth & Infiltration</button>
+                <button class="discipline-filter-btn" data-filter="weapons">Staff & Chain Weapons</button>
+                <button class="discipline-filter-btn" data-filter="mind">Mindset & Fudōshin</button>
+                <button class="discipline-filter-btn" data-filter="tactical">Modern Tactical</button>
+            </div>
+
+            <!-- Dynamic Disciplines Grid -->
+            <div class="disciplines-grid" id="disciplines-grid">
+                <!-- Injected via JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. INTERACTIVE WEAPONS ARMORY -->
+    <section class="armory-section" id="armory">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ SHINOBI WEAPONRY ARCHIVE</div>
+                <h2 class="section-title">The Sacred <span>Shinobi Armory</span></h2>
+                <p class="section-desc">
+                    Explore the authentic weapons of the ninja. Examine technical specifications, historical tactics, and dojo safety guidelines.
+                </p>
+            </div>
+
+            <div class="armory-layout">
+                <!-- Selector Tabs -->
+                <div class="weapons-selector" id="weapons-selector">
+                    <!-- Injected via JavaScript -->
+                </div>
+
+                <!-- Detail View Card -->
+                <div id="weapon-detail-view">
+                    <!-- Injected via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6B. IMPOSSIBLE 3D WEBGL BLADE FORGE & CUSTOMIZER -->
+    <section class="forge-section" id="forge">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ 3D WEBGL BLADE CUSTOMIZER</div>
+                <h2 class="section-title">The Sacred <span>3D Shinobi Forge</span></h2>
+                <p class="section-desc">
+                    Rotate, inspect, and customize authentic 3D weapon meshes in real-time. Change the folding steel hamon line and trigger dynamic blade flourishes.
+                </p>
+            </div>
+
+            <div class="forge-container">
+                <!-- 3D Three.js Viewport -->
+                <div class="three-viewport-wrap">
+                    <div id="three-katana-viewport"></div>
+                    <div class="viewport-overlay-badges">
+                        <span class="viewport-badge">3D WebGL Realtime Forge</span>
+                        <span class="viewport-badge" style="border-color: var(--crimson); color: var(--crimson-bright);">Damascus Hamon Active</span>
+                    </div>
+                    <div class="viewport-hint">🖱️ Click & Drag to Rotate 360° • Pinch / Scroll to Zoom</div>
+                </div>
+
+                <!-- Sidebar Controls -->
+                <div class="forge-sidebar glass-panel">
+                    <h3>Master Weaponsmith Controls</h3>
+                    <p style="font-size: 0.82rem; color: var(--text-muted);">Switch weapon geometry and choose the mystical forging temper of the steel.</p>
+
+                    <!-- Weapon Model Switcher -->
+                    <div>
+                        <span style="display: block; font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: var(--gold-bright); margin-bottom: 6px;">Select Weapon Base:</span>
+                        <div class="weapon-switch-pills">
+                            <button class="weapon-pill-btn active" data-weapon="katana">⚔️ Katana</button>
+                            <button class="weapon-pill-btn" data-weapon="shuriken">⭐ Shuriken</button>
+                            <button class="weapon-pill-btn" data-weapon="kunai">🗡️ Kunai</button>
+                        </div>
+                    </div>
+
+                    <!-- Steel Customizer -->
+                    <div class="steel-finish-group">
+                        <label>Folded Steel Temper:</label>
+                        <div class="steel-pills-grid">
+                            <button class="steel-select-btn active" data-steel="tamahagane">
+                                <span class="steel-dot" style="background: #cbd5e1; box-shadow: 0 0 8px #fff;"></span>
+                                <span>Tamahagane</span>
+                            </button>
+                            <button class="steel-select-btn" data-steel="muramasa">
+                                <span class="steel-dot" style="background: #ef233c; box-shadow: 0 0 8px #ef233c;"></span>
+                                <span>Muramasa</span>
+                            </button>
+                            <button class="steel-select-btn" data-steel="yami">
+                                <span class="steel-dot" style="background: #9d4edd; box-shadow: 0 0 8px #9d4edd;"></span>
+                                <span>Yami Shadow</span>
+                            </button>
+                            <button class="steel-select-btn" data-steel="raijin">
+                                <span class="steel-dot" style="background: #ffd166; box-shadow: 0 0 8px #ffd166;"></span>
+                                <span>Raijin Gold</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
+                        <button class="btn-flourish" id="btn-3d-flourish">⚡ Katana Flourish & Spin</button>
+                        <button class="btn-outline" id="btn-3d-autorotate" style="font-size: 0.8rem;">🔄 Toggle Auto-Rotation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. BELT PROGRESSION & RANK ROADMAP -->
+    <section class="belts-section" id="belts">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ THE PATH FROM INITIATE TO MASTER</div>
+                <h2 class="section-title">Official <span>Belt Progression</span> & Kyū-Dan Roadmap</h2>
+                <p class="section-desc">
+                    Every warrior's journey is mapped with clear technical criteria, sparring benchmarks, and international federation certification.
+                </p>
+            </div>
+
+            <div class="belt-roadmap-layout">
+                <div class="belt-timeline-list" id="belt-timeline-list">
+                    <!-- Injected via JavaScript -->
+                </div>
+
+                <div id="belt-detail-content">
+                    <!-- Injected via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. INTERACTIVE PLACEMENT QUIZ ("FIND YOUR COMBAT PATH") -->
+    <section class="quiz-section" id="quiz">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ PERSONAL WARRIOR ASSESSMENT</div>
+                <h2 class="section-title">Find Your <span>Ninja Combat Path</span></h2>
+                <p class="section-desc">
+                    Take our 60-second interactive questionnaire to discover the exact training format, weapon specialty, and customized curriculum suited to your goals.
+                </p>
+            </div>
+
+            <div class="quiz-wrapper">
+                <div class="quiz-card glass-panel" id="quiz-card">
+                    <!-- Quiz Wizard Injected via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. TRAINING MODES: HONBU DOJO VS GLOBAL ONLINE -->
+    <section class="modes-section" id="modes">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ FLEXIBLE TRAINING FORMATS</div>
+                <h2 class="section-title">In-Person Honbu Dojo or <span>Global Online</span></h2>
+                <p class="section-desc">
+                    Whether you live in Mathura, Delhi, Mumbai, or halfway across the globe, you can train directly under Sensei Ninja Dhruv.
+                </p>
+            </div>
+
+            <div class="modes-grid">
+                <!-- Offline Dojo -->
+                <div class="mode-card glass-panel">
+                    <span class="mode-badge" style="position: static !important; display: inline-block !important; width: fit-content; margin-bottom: 14px !important;">Mathura, India</span>
+                    <h3 style="margin-top: 0 !important; margin-bottom: 10px !important;">Honbu Dojo Physical Academy</h3>
+                    <p class="mode-lead">Immersive, Hands-On Classical & Combat Training</p>
+                    <ul class="mode-features-list">
+                        <li><span class="check-icon">✓</span> Full tatami mat dojo with heavy bags, wooden dummies, and obstacle stations</li>
+                        <li><span class="check-icon">✓</span> Direct hands-on joint lock adjustments and tactile resistance sparring</li>
+                        <li><span class="check-icon">✓</span> Access to authentic Japanese Bokken, Bo staffs, Kusarigama, and safe throwing ranges</li>
+                        <li><span class="check-icon">✓</span> Official physical belt grading ceremonies and tournament team preparation</li>
+                        <li><span class="check-icon">✓</span> Weekend wilderness survival and outdoor mountain combat intensives</li>
+                    </ul>
+                    <button class="btn-primary trigger-booking" data-program="Honbu Dojo In-Person Mathura">
+                        <span>Book Dojo Visit & Trial</span>
+                    </button>
+                </div>
+
+                <!-- Online Academy -->
+                <div class="mode-card glass-panel">
+                    <span class="mode-badge" style="position: static !important; display: inline-block !important; width: fit-content; margin-bottom: 14px !important;">Worldwide Access</span>
+                    <h3 style="margin-top: 0 !important; margin-bottom: 10px !important;">Global Online Shinobi Academy</h3>
+                    <p class="mode-lead">Live Interactive Zoom Sessions with Sensei Dhruv</p>
+                    <ul class="mode-features-list">
+                        <li><span class="check-icon">✓</span> Bidirectional live video where Sensei Dhruv corrects your angles in real-time</li>
+                        <li><span class="check-icon">✓</span> 120+ On-Demand HD tutorial library covering stances, katas, and escapes</li>
+                        <li><span class="check-icon">✓</span> Weekly training drill checklists and private student community support</li>
+                        <li><span class="check-icon">✓</span> Video assignment grading and official digital certificate eligibility</li>
+                        <li><span class="check-icon">✓</span> Option to attend weekend in-person intensive camps in Mathura</li>
+                    </ul>
+                    <button class="btn-secondary trigger-booking" data-program="Global Online Live Zoom">
+                        <span>Join Live Online Stream</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Schedules Tab -->
+            <div id="schedule">
+                <div class="section-header" style="margin-bottom: 30px;">
+                    <div class="section-tag">✦ LIVE TIMETABLE</div>
+                    <h3 style="font-size: 1.8rem;">Weekly Training Schedule</h3>
+                </div>
+
+                <div class="schedule-tabs-wrap">
+                    <button class="schedule-tab-btn active" data-schedule-type="offline">Mathura Honbu Dojo (In-Person)</button>
+                    <button class="schedule-tab-btn" data-schedule-type="online">Global Online Stream (Zoom Live)</button>
+                </div>
+
+                <div class="schedule-list" id="schedule-list">
+                    <!-- Injected via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. GAMIFIED SHINOBI TRAINING PAVILION -->
+    <section class="pavilion-section" id="pavilion">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ INTERACTIVE DOJO DRILLS</div>
+                <h2 class="section-title">Gamified <span>Shinobi Training</span> Pavilion</h2>
+                <p class="section-desc">
+                    Test your neuromuscular reaction time and practice rhythmic stance transitions powered by our procedural Web Audio sound synthesizer.
+                </p>
+            </div>
+
+            <div class="pavilion-grid">
+                <!-- Reflex Reaction Simulator -->
+                <div class="pavilion-card glass-panel">
+                    <h3>⚡ Reflex Reaction Simulator</h3>
+                    <p>When the shadow flashes crimson into striking speed, click or tap immediately to measure your response time!</p>
+                    
+                    <div class="reflex-box" id="reflex-box">
+                        <div class="reflex-icon" id="reflex-icon">心</div>
+                        <div class="reflex-label" id="reflex-label">Tap here to begin reflex calibration</div>
+                    </div>
+
+                    <div class="reflex-stats">
+                        <span>Your Best Reaction: <strong id="reflex-best-time">-- ms</strong></span>
+                        <p style="font-size: 0.78rem; margin-top: 6px; color: var(--text-dim);">Legend: &lt;230ms (Master Shinobi) | 230-300ms (Skilled) | &gt;300ms (Developing)</p>
+                    </div>
+                </div>
+
+                <!-- Cadence Combat Stance Drill -->
+                <div class="pavilion-card glass-panel">
+                    <h3>🥋 45-Second Cadence Stance Drill</h3>
+                    <p>Follow the audio gongs and visual combat callouts. Shift postures and execute combinations in real-time.</p>
+                    
+                    <div class="cadence-box">
+                        <div class="drill-timer" id="drill-timer">00:45</div>
+                        <div class="drill-stance-title" id="drill-stance-title">Ready to Begin</div>
+                        <div class="drill-stance-steps" id="drill-stance-steps">Hit the button to start cadence callouts.</div>
+                    </div>
+
+                    <button class="btn-primary" id="drill-action-btn" style="width: 100%;">
+                        <span>Begin 45s Cadence Drill</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10B. IMPOSSIBLE SHINOBI BLADE SLICER COMBAT ARENA -->
+    <section class="blade-arena-section" id="combat-game">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ LIVE WEB COMBAT ENGINE</div>
+                <h2 class="section-title">Shinobi Blade Slicer: <span>Zanshin Arena</span></h2>
+                <p class="section-desc">
+                    Slash incoming bamboo rolls, training dummies, and flying shurikens with your mouse or finger! Split targets, trigger multi-cut combos, and detonate smoke bombs for bullet-time slow-motion!
+                </p>
+            </div>
+
+            <div class="blade-arena-box">
+                <!-- Top HUD -->
+                <div class="blade-hud-bar">
+                    <div class="blade-hud-item">HONBU SCORE: <strong id="blade-score">0</strong></div>
+                    <div class="blade-hud-item">COMBO: <strong id="blade-combo">x0</strong></div>
+                    <div class="blade-hud-item">HIGH SCORE: <strong id="blade-highscore">0</strong></div>
+                </div>
+
+                <!-- Canvas Game Area -->
+                <canvas id="blade-combat-canvas"></canvas>
+
+                <!-- Bottom Controls -->
+                <div class="blade-controls-bottom">
+                    <div class="blade-instructions-text">
+                        🗡️ <strong>Instructions:</strong> Drag mouse or swipe finger across targets to slice! Cut <span>Purple Smoke Pots</span> for <strong>Slow-Mo Bullet Time</strong>!
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn-primary" id="btn-start-blade-game" style="padding: 10px 20px; font-size: 0.85rem;">
+                            <span>⚔️ Enter Combat Slicer</span>
+                        </button>
+                        <button class="btn-outline" id="btn-pause-blade-game" style="display: none; padding: 10px 16px; font-size: 0.85rem;">
+                            <span>Pause</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. MEDIA SHOWCASE (ACTION VIDEO & PHOTOS) -->
+    <section class="showcase-section" id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ IN ACTION</div>
+                <h2 class="section-title">Dojo Visual & <span>Combat Showcase</span></h2>
+                <p class="section-desc">
+                    Glimpse the intense dedication, blade precision, and camaraderie forged on the tatami mats and outdoor training expeditions.
+                </p>
+            </div>
+
+            <!-- Video Player -->
+            <div class="showcase-video-card glass-panel">
+                <video class="showcase-video-player" controls preload="metadata" poster="assets/images/ai_dojo_tatami_light.jpg">
+                    <source src="assets/video/hero_ambient.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video playback.
+                </video>
+            </div>
+
+            <!-- Action Photo Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/ai_hero_katana_light.jpg" alt="Classical Katana Stance & Kihon" loading="eager">
+                    <div class="gallery-overlay"><span class="gallery-caption">Classical Katana Stance & Kihon</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/ai_kenjutsu_duel_light.jpg" alt="Kenjutsu Kumitachi Bokken Dueling" loading="eager">
+                    <div class="gallery-overlay"><span class="gallery-caption">Kenjutsu Kumitachi Bokken Dueling</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/ai_taijutsu_defense_light.jpg" alt="Taijutsu Joint Lock Disarms" loading="eager">
+                    <div class="gallery-overlay"><span class="gallery-caption">Taijutsu Joint Lock Disarms</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/ai_bojutsu_staff_light.jpg" alt="Bōjutsu 6-Foot Staff Stance" loading="eager">
+                    <div class="gallery-overlay"><span class="gallery-caption">Bōjutsu 6-Foot Staff Stance</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/ai_scroll_wisdom_light.jpg" alt="Bansenshūkai Ancient Scrolls & Strategy" loading="eager">
+                    <div class="gallery-overlay"><span class="gallery-caption">Bansenshūkai Ancient Scrolls & Strategy</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/ai_meditation_zen_light.jpg" alt="Fudōshin Zen Seiza Breathwork" loading="eager">
+                    <div class="gallery-overlay"><span class="gallery-caption">Fudōshin Zen Seiza Breathwork</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/ai_dojo_tatami_light.jpg" alt="Mathura Honbu Dojo Tatami Hall" loading="eager">
+                    <div class="gallery-overlay"><span class="gallery-caption">Mathura Honbu Dojo Tatami Hall</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/ai_founder_sensei_light.jpg" alt="Headmaster Sensei Ninja Dhruv (3rd Dan)" loading="eager">
+                    <div class="gallery-overlay"><span class="gallery-caption">Headmaster Sensei Ninja Dhruv (3rd Dan)</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. THE 9 VIRTUES OF THE SHINOBI (SHINOBI NO MICHI) -->
+    <section class="virtues-section" id="virtues">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ THE WARRIOR CODE</div>
+                <h2 class="section-title">Shinobi no Michi: <span>The 9 Sacred Virtues</span></h2>
+                <p class="section-desc">
+                    Martial technique without ethical discipline produces recklessness. The true shinobi walks with integrity, compassion, and an unbreakable moral compass.
+                </p>
+            </div>
+
+            <div class="virtues-grid" id="virtues-grid">
+                <!-- Injected via JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 12B. IMPOSSIBLE KUJI-IN 9 MYSTIC MUDRA ENERGY NEXUS -->
+    <section class="kuji-section" id="kuji-nexus">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ SACRED ESOTERIC SHINOBI SEALS</div>
+                <h2 class="section-title">The 9 Kuji-In <span>Mystic Mudra Seals</span></h2>
+                <p class="section-desc">
+                    Click any sacred seal to awaken its geometric energy mandala, hear the resonant harmonic singing bowl tone, and reveal the hidden mudra and psychological battlefield focus.
+                </p>
+            </div>
+
+            <div class="kuji-grid" id="kuji-grid">
+                <!-- Injected via JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. VIP SELECTIVE ADMISSION & PRIVATE EVALUATION -->
+    <section class="vip-admission-section" id="vip-admission">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ EXCLUSIVE ACADEMY SELECTION</div>
+                <h2 class="section-title">Selective Admission & <span>Mentorship Audition</span></h2>
+                <p class="section-desc">
+                    Ninja Combat Academy accepts disciplined practitioners through private interview and technical assessment. We prioritize honor, character, and consistency over mass commercial enrollment.
+                </p>
+            </div>
+
+            <div class="vip-grid">
+                <div class="vip-perks-card glass-panel">
+                    <span class="vip-badge-gold">👑 Direct Mentorship Track</span>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 12px; color: #fff;">Private Warrior Evaluation with Sensei Ninja Dhruv</h3>
+                    <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6;">
+                        Every candidate undergoes an initial diagnostic of biomechanics, combat temperament, and personal discipline. Accepted initiates receive customized training regimens tailored to their physical stature and defense goals.
+                    </p>
+
+                    <ul class="vip-perks-list">
+                        <li class="vip-perk-item">
+                            <span class="perk-icon">⚔️</span>
+                            <div class="perk-text">
+                                <strong>1-on-1 Biomechanical Stance Assessment</strong>
+                                <p>Personal review of footwork, spine alignment, reaction speed, and joint flexibility.</p>
+                            </div>
+                        </li>
+                        <li class="vip-perk-item">
+                            <span class="perk-icon">📜</span>
+                            <div class="perk-text">
+                                <strong>Individualized Shinobi Development Roadmap</strong>
+                                <p>Bespoke training milestones spanning empty-hand Taijutsu, Katana swordsmanship, and tactical defense.</p>
+                            </div>
+                        </li>
+                        <li class="vip-perk-item">
+                            <span class="perk-icon">⛩️</span>
+                            <div class="perk-text">
+                                <strong>Dojo Tatami & Online Global Dual Access</strong>
+                                <p>Seamlessly train at Mathura Honbu Dojo or connect to encrypted global Zoom masterclasses anytime.</p>
+                            </div>
+                        </li>
+                        <li class="vip-perk-item">
+                            <span class="perk-icon">🎖️</span>
+                            <div class="perk-text">
+                                <strong>Direct Black Belt Dan Registry Eligibility</strong>
+                                <p>Official lineage authentication signed by Sensei Ninja Dhruv (3rd Dan) with verifiable cryptographic ledger ID.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="vip-apply-card glass-panel">
+                    <div class="vip-apply-header" style="text-align: center; margin-bottom: 24px;">
+                        <span style="font-size: 2.5rem; display: block; margin-bottom: 8px;">🥋</span>
+                        <h3 style="color: #ffd700; font-size: 1.4rem;">Request Private Audition</h3>
+                        <p style="color: #94a3b8; font-size: 0.85rem;">Limited to 15 new inductees per quarterly intake.</p>
+                    </div>
+
+                    <form class="booking-form" onsubmit="event.preventDefault(); window.openBookingModal ? window.openBookingModal('VIP Elite Mentorship Audition with Sensei Dhruv') : alert('Application received. Sensei Dhruv will contact you.');">
+                        <div class="form-group">
+                            <label style="color: #fff; font-size: 0.82rem; font-weight: 700;">Candidate Full Name</label>
+                            <input type="text" placeholder="e.g. Vikramaditya Rathore" required style="width: 100%; padding: 12px 14px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff;">
+                        </div>
+
+                        <div class="form-group" style="margin-top: 14px;">
+                            <label style="color: #fff; font-size: 0.82rem; font-weight: 700;">Direct WhatsApp / Mobile</label>
+                            <input type="tel" placeholder="+91 98765 43210" required style="width: 100%; padding: 12px 14px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff;">
+                        </div>
+
+                        <div class="form-group" style="margin-top: 14px;">
+                            <label style="color: #fff; font-size: 0.82rem; font-weight: 700;">Preferred Academy Track</label>
+                            <select style="width: 100%; padding: 12px 14px; background: #131a2c; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff;">
+                                <option>Private Mathura Honbu Dojo Apprenticeship</option>
+                                <option>Executive Evening & Weekend Combat Track</option>
+                                <option>International Global Zoom Masterclass</option>
+                                <option>Youth Shinobi Leadership Program (Ages 6-15)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 14px;">
+                            <label style="color: #fff; font-size: 0.82rem; font-weight: 700;">Primary Motivation / Background</label>
+                            <textarea rows="2" placeholder="Tell Sensei about your martial arts background, fitness level, and why you wish to walk this path..." style="width: 100%; padding: 12px 14px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary trigger-vip-apply" style="width: 100%; margin-top: 20px; padding: 14px;">
+                            <span>Submit Application for Admission</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13B. 360° HONBU DOJO VIRTUAL TATAMI TOUR -->
+    <section class="dojo-tour-section" id="dojo-tour">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ IMMERSIVE VIRTUAL EXPLORATION</div>
+                <h2 class="section-title">Explore the <span>Mathura Honbu Dojo</span></h2>
+                <p class="section-desc">
+                    Step inside our sacred training grounds in Om Nagar Colony, Mathura. Discover the spring-loaded tatami halls, ancestral Kamiza shrine, budo weapons vault, and outdoor agility rigs.
+                </p>
+            </div>
+
+            <div class="tour-layout">
+                <div class="tour-rooms-list" id="tour-rooms-list">
+                    <!-- Populated by premium-features.js -->
+                </div>
+
+                <div class="tour-display-card glass-panel" id="tour-display-card">
+                    <!-- Populated by premium-features.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13C. KATA BIOMECHANICS VIDEO ANALYZER & FRAME SCRUBBER -->
+    <section class="analyzer-section" id="kata-analyzer">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ PRECISION BIOMECHANICS</div>
+                <h2 class="section-title">Shinobi Motion <span>Telemetry & Slow-Mo Analyzer</span></h2>
+                <p class="section-desc">
+                    Analyze classical katana trajectory angles, rotational torque, and footwork stability with our interactive high-speed video scrub controller.
+                </p>
+            </div>
+
+            <div class="analyzer-box">
+                <div class="video-scrubber-card glass-panel">
+                    <div class="analyzer-video-wrap">
+                        <video id="analyzer-video" autoplay muted loop playsinline poster="assets/images/ai_kenjutsu_duel_light.jpg">
+                            <source src="assets/video/hero_ambient.mp4" type="video/mp4">
+                        </video>
+                        <div class="analyzer-hud-overlay" id="analyzer-vectors">
+                            <div class="analyzer-hud-top" style="display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; font-family: 'Courier New', monospace; font-size: 0.72rem; color: #00ffcc;">
+                                <span style="white-space: nowrap; background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 4px;">TARGET: KESA-GIRI CUT</span>
+                                <span style="white-space: nowrap; background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 4px;">FPS: 120 (TELEMETRY SYNC)</span>
+                                <span style="white-space: nowrap; background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 4px;">ANGLE: 45.2°</span>
+                            </div>
+                            <div class="analyzer-vector-cross"></div>
+                            <div style="font-family: 'Courier New', monospace; font-size: 0.76rem; color: #334155; font-weight: 600;">
+                                <span style="color: #d90429; font-weight: 800;">TORQUE VECTOR:</span> 380 N·m &nbsp;|&nbsp; <span style="color: #b45309; font-weight: 800;">CORE ENGAGEMENT:</span> 98%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="analyzer-controls-bar">
+                        <div style="display: flex; gap: 8px; align-items: center;">
+                            <button class="btn-outline" id="btn-analyzer-play" style="padding: 6px 14px; font-size: 0.78rem;">Pause</button>
+                            <button class="btn-outline" id="btn-analyzer-step" style="padding: 6px 14px; font-size: 0.78rem;">⏭ Step +1 Frame</button>
+                            <button class="btn-outline" id="btn-toggle-vectors" style="padding: 6px 14px; font-size: 0.78rem;">📐 HUD Vectors</button>
+                        </div>
+                        <div class="scrub-speed-btns">
+                            <button class="scrub-speed-btn" data-speed="0.25">0.25x</button>
+                            <button class="scrub-speed-btn" data-speed="0.5">0.5x</button>
+                            <button class="scrub-speed-btn active" data-speed="1.0">1.0x</button>
+                            <button class="scrub-speed-btn" data-speed="1.5">1.5x</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analyzer-notes-card glass-panel">
+                    <span style="color: var(--crimson); font-weight: 800; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">Kinematic Breakdown</span>
+                    <h3 style="margin-top: 6px;">Happō Giri Sword Vector Analysis</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.65;">
+                        In classical Kenjutsu, cutting power originates in the pelvic hara (dantian) rather than arm strength. The telemetry overlay illustrates how gravitational momentum accelerates the kissaki (blade tip).
+                    </p>
+
+                    <ul class="biomechanics-list" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+                        <li class="biomechanics-item">
+                            <strong style="display: block; margin-bottom: 4px; line-height: 1.35; color: var(--text-onyx);">1. Tenouchi Grip Compression</strong>
+                            <span style="display: block; line-height: 1.55; color: var(--text-slate);">Micro-squeeze at impact transfers 94% kinetic energy into cutting edge without blade vibration.</span>
+                        </li>
+                        <li class="biomechanics-item">
+                            <strong style="display: block; margin-bottom: 4px; line-height: 1.35; color: var(--text-onyx);">2. Zanshin Recovery Angle</strong>
+                            <span style="display: block; line-height: 1.55; color: var(--text-slate);">Maintains structural guard (Chūdan-no-kamae) within 0.18 seconds post-strike to counter secondary assailants.</span>
+                        </li>
+                        <li class="biomechanics-item">
+                            <strong style="display: block; margin-bottom: 4px; line-height: 1.35; color: var(--text-onyx);">3. Ashisabaki Weight Distribution</strong>
+                            <span style="display: block; line-height: 1.55; color: var(--text-slate);">Rear heel grounded; 60/40 center of mass ensures immediate pivot capability in all 8 cardinal directions.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13D. WARRIOR APTITUDE RADAR & SHINOBI IQ -->
+    <section class="iq-section" id="warrior-iq">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ REAL-TIME WARRIOR METRICS</div>
+                <h2 class="section-title">Shinobi Combat Aptitude <span>Radar</span></h2>
+                <p class="section-desc">
+                    Calibrate your combat attributes across reaction time, spatial distance control (Ma-ai), psychological calmness (Fudōshin), tumbling breakfalls, and weapon versatility.
+                </p>
+            </div>
+
+            <div class="iq-grid">
+                <div class="radar-canvas-wrap glass-panel">
+                    <canvas id="warrior-radar-canvas" width="440" height="440"></canvas>
+                    <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 12px;">Dynamic 5-Axis Shinobi Pentagon Matrix</p>
+                </div>
+
+                <div class="iq-sliders-card glass-panel">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: #fff;">Calibrate Your Warrior Attributes</h3>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>⚡ Reaction Speed (Sensory Reflex)</span>
+                            <span class="slider-val" id="val-reaction">85%</span>
+                        </div>
+                        <input type="range" class="iq-range-input" id="iq-reaction" min="20" max="100" value="85">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>📐 Spatial Distance Control (Ma-ai)</span>
+                            <span class="slider-val" id="val-spatial">80%</span>
+                        </div>
+                        <input type="range" class="iq-range-input" id="iq-spatial" min="20" max="100" value="80">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>🧠 Fudōshin (Immovable Calm Under Fire)</span>
+                            <span class="slider-val" id="val-mind">90%</span>
+                        </div>
+                        <input type="range" class="iq-range-input" id="iq-mind" min="20" max="100" value="90">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>🥋 Ukemi Acrobatics & Breakfalls</span>
+                            <span class="slider-val" id="val-ukemi">78%</span>
+                        </div>
+                        <input type="range" class="iq-range-input" id="iq-ukemi" min="20" max="100" value="78">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>⚔️ Weapons Dexterity (Katana/Bo/Shuriken)</span>
+                            <span class="slider-val" id="val-weapons">82%</span>
+                        </div>
+                        <input type="range" class="iq-range-input" id="iq-weapons" min="20" max="100" value="82">
+                    </div>
+
+                    <div class="iq-score-display">
+                        <span style="font-size: 0.85rem; color: #475569; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Shinobi Composite Index</span>
+                        <strong id="iq-composite-score">83 / 100</strong>
+                        <div id="iq-composite-tier" style="color: #b45309; font-weight: 800; font-size: 1.05rem; margin-top: 4px;">Senior Operative (Chunin Grade)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13E. VERIFIABLE BLACK BELT DAN CERTIFICATE REGISTRY -->
+    <section class="registry-section" id="belt-registry">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ LINEAGE CREDENTIAL LEDGER</div>
+                <h2 class="section-title">Official Black Belt <span>Dan Registry</span></h2>
+                <p class="section-desc">
+                    Search and verify authentic Black Belt Dan ranks conferred under Sensei Ninja Dhruv. Every graduate is logged with a unique Academy verification certificate hash.
+                </p>
+            </div>
+
+            <div class="registry-search-bar">
+                <input type="text" id="registry-search-input" placeholder="🔍 Search graduate name, Dan rank, or verification hash (e.g. Dhruv, Shodan, MTH-108)...">
+            </div>
+
+            <div class="registry-table-wrap">
+                <table class="registry-table">
+                    <thead>
+                        <tr>
+                            <th>Graduate Warrior</th>
+                            <th>Conferred Dan Rank</th>
+                            <th>Conferral Year</th>
+                            <th>Verification Certificate Hash</th>
+                            <th>Lineage Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="registry-table-body">
+                        <!-- Populated by premium-features.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. TESTIMONIALS & REVIEWS -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ STUDENT EXPERIENCES</div>
+                <h2 class="section-title">Words from the <span>Brotherhood</span></h2>
+                <p class="section-desc">
+                    Hear authentic stories from trainees across Mathura, Delhi, Mumbai, and our global online community.
+                </p>
+            </div>
+
+            <div class="testimonials-grid" id="testimonials-grid">
+                <!-- Injected via JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. FAQ ACCORDION -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ COMMON INQUIRIES</div>
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-desc">
+                    Everything you need to know about starting your martial journey at Ninja Combat Academy.
+                </p>
+            </div>
+
+            <div class="faq-accordion" id="faq-accordion">
+                <!-- Injected via JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 16. HONBU DOJO LOCATION & CONTACT -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ VISIT OUR HONBU DOJO</div>
+                <h2 class="section-title">Connect with <span>Sensei Ninja Dhruv</span></h2>
+                <p class="section-desc">
+                    We invite you to experience the dojo atmosphere in person. Book a visit, attend an observation session, or ask any question.
+                </p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-card glass-panel">
+                    <h3>Mathura Honbu Dojo Headquarters</h3>
+                    <p>The spiritual and technical heart of Ninja Combat Academy in Uttar Pradesh, India.</p>
+
+                    <div class="location-details">
+                        <div class="loc-item">
+                            <div class="loc-icon">📍</div>
+                            <div>
+                                <strong>Physical Address:</strong>
+                                <span>Om Nagar Colony, Near Lakhan Halwai, Mathura, Uttar Pradesh - 281001, India</span>
+                            </div>
+                        </div>
+
+                        <div class="loc-item">
+                            <div class="loc-icon">🚆</div>
+                            <div>
+                                <strong>Transit & Access:</strong>
+                                <span>12 minutes from Mathura Junction (MTJ) Railway Station. Auto-rickshaws and cabs available directly to Lakhan Halwai / Om Nagar Colony.</span>
+                            </div>
+                        </div>
+
+                        <div class="loc-item">
+                            <div class="loc-icon">📞</div>
+                            <div>
+                                <strong>Phone / WhatsApp Direct:</strong>
+                                <span><a href="tel:+918865839038">+91 8865839038</a></span>
+                            </div>
+                        </div>
+
+                        <div class="loc-item">
+                            <div class="loc-icon">✉️</div>
+                            <div>
+                                <strong>Official Email:</strong>
+                                <span><a href="mailto:ninjadhruva@gmail.com">ninjadhruva@gmail.com</a></span>
+                            </div>
+                        </div>
+
+                        <div class="loc-item">
+                            <div class="loc-icon">⏰</div>
+                            <div>
+                                <strong>Dojo Visitor Hours:</strong>
+                                <span>Monday - Saturday: 6:00 AM - 11:00 AM | 5:00 PM - 8:30 PM IST</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                        <a href="https://wa.me/918865839038?text=Hello%20Sensei%20Dhruv%2C%20I%20would%20like%20to%20visit%20the%20Mathura%20Honbu%20Dojo." target="_blank" class="btn-primary">
+                            <span>💬 Message on WhatsApp</span>
+                        </a>
+                        <button class="btn-secondary trigger-booking" data-program="Honbu Dojo Visit Pass">
+                            <span>Request Visit Pass</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="map-embed-card glass-panel">
+                    <!-- Google Maps Embed for Mathura, UP -->
+                    <iframe 
+                        title="Ninja Combat Academy Mathura Location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113426.6917639525!2d77.60803099999999!3d27.492413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973711666e60b73%3A0x7d6f55e5b3261234!2sMathura%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="eager">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16B. IMPOSSIBLE GLOBAL SHINOBI NETWORK LIVE RADAR -->
+    <section class="network-section" id="global-network">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">✦ LIVE TELEMETRY & CHAPTERS</div>
+                <h2 class="section-title">The Global <span>Shinobi Network</span></h2>
+                <p class="section-desc">
+                    Real-time status of active chapters, seminar training nodes, and live stream cohorts linked directly to the Mathura Honbu Dojo.
+                </p>
+            </div>
+
+            <div class="network-grid" id="network-grid">
+                <!-- Injected via JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 17. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>NINJA COMBAT ACADEMY <span>忍者</span></h2>
+                    <p>
+                        Preserving the classical arts of Ninjutsu, Kenjutsu, and Taijutsu while empowering modern individuals with razor-sharp physical defense, situational awareness, and an unshakeable warrior spirit.
+                    </p>
+                    <div style="font-size: 0.85rem; color: var(--gold-bright);">
+                        Founder & Mentor: <strong>Sensei Ninja Dhruv (3rd Dan)</strong>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>The Disciplines</h4>
+                    <ul>
+                        <li><a href="#disciplines">Taijutsu (Body Mechanics)</a></li>
+                        <li><a href="#disciplines">Kenjutsu (Katana Arts)</a></li>
+                        <li><a href="#disciplines">Shinobijutsu (Stealth)</a></li>
+                        <li><a href="#disciplines">Bōjutsu (Staff Fighting)</a></li>
+                        <li><a href="#disciplines">Shurikenjutsu (Blades)</a></li>
+                        <li><a href="#disciplines">Goton-pō (Evasion)</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Academy Navigation</h4>
+                    <ul>
+                        <li><a href="#about">About Sensei Dhruv</a></li>
+                        <li><a href="#belts">Belt Rank Criteria</a></li>
+                        <li><a href="#vip-admission">VIP Admission & Audition</a></li>
+                        <li><a href="#dojo-tour">360° Dojo Tour</a></li>
+                        <li><a href="#belt-registry">Dan Registry</a></li>
+                        <li><a href="#location">Mathura Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px;">Shinobi Wisdom Dispatch</h4>
+                    <p>Receive monthly articles on historical martial texts (Bansenshukai), breathwork exercises, and seminar updates.</p>
+                    <form class="footer-input-wrap" onsubmit="event.preventDefault(); alert('Domo arigato! You are subscribed to the Shinobi Dispatch.');">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    © 2026 Ninja Combat Academy. Founded by Ninja Dhruv. All Rights Reserved.
+                </div>
+                <div class="footer-social-row">
+                    <a href="https://facebook.com/NinjaCombatAcademy" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://wa.me/918865839038" target="_blank" rel="noopener">WhatsApp</a>
+                    <a href="mailto:ninjadhruva@gmail.com">Email</a>
+                    <a href="tel:+918865839038">Call (+91 8865839038)</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 18. FLOATING SENSEI AI CHATBOT -->
+    <button class="sensei-chat-toggle" id="sensei-chat-toggle" aria-label="Open Sensei Assistant Chat">
+        <span>🥷 Ask Sensei AI</span>
+    </button>
+
+    <div class="sensei-chat-widget" id="sensei-chat-widget">
+        <div class="chat-header">
+            <div class="chat-title-info">
+                <div class="chat-sensei-avatar">🥷</div>
+                <div>
+                    <h4>Sensei AI Assistant</h4>
+                    <span class="chat-status">● Academy Guide Online</span>
+                </div>
+            </div>
+            <button class="chat-close-btn" id="sensei-chat-close" aria-label="Close Chat">✕</button>
+        </div>
+
+        <div class="chat-messages" id="sensei-messages">
+            <div class="chat-msg sensei">
+                <div class="msg-bubble">
+                    Konnichiwa! I am your Academy Guide. How can I assist your shinobi journey today? Ask about classes in Mathura, our global online live batches, tuition, or weapons!
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-quick-chips">
+            <button class="prompt-chip" data-prompt="Where is the Mathura dojo?">📍 Dojo Address</button>
+            <button class="prompt-chip" data-prompt="How do I audition for VIP selective admission?">★ VIP Audition</button>
+            <button class="prompt-chip" data-prompt="Can beginners join?">🥋 Beginners</button>
+            <button class="prompt-chip" data-prompt="How do online classes work?">🌐 Online Batches</button>
+        </div>
+
+        <div class="chat-input-bar">
+            <input type="text" id="sensei-input" placeholder="Ask about training, weapons, fees...">
+            <button class="chat-send-btn" id="sensei-send-btn" aria-label="Send Message">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- 19. BOOKING & TRIAL CLASS MODAL -->
+    <div class="modal-backdrop" id="booking-modal">
+        <div class="modal-container glass-panel">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">✕</button>
+            
+            <h3 class="modal-title">Claim Your Free Session</h3>
+            <p class="modal-subtitle">Reserve a 1-day trial class or schedule an induction with Sensei Ninja Dhruv.</p>
+
+            <form class="booking-form" id="booking-form">
+                <input type="hidden" id="modal-program-input" value="1-Day Free Trial Session">
+
+                <div class="form-group">
+                    <label for="book-name">Full Name *</label>
+                    <input type="text" id="book-name" placeholder="e.g. Rahul Verma" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="book-phone">WhatsApp / Phone *</label>
+                        <input type="tel" id="book-phone" placeholder="e.g. +91 9876543210" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="book-mode">Preferred Format *</label>
+                        <select id="book-mode">
+                            <option value="In-Person at Mathura Honbu Dojo">Mathura Honbu Dojo</option>
+                            <option value="Live Online Zoom Stream">Live Online (Zoom)</option>
+                            <option value="Youth Shinobi (Kids 6-15)">Youth Shinobi (Kids)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="book-date">Preferred Date</label>
+                    <input type="date" id="book-date">
+                </div>
+
+                <div class="form-group">
+                    <label for="book-notes">Training Goals or Questions</label>
+                    <textarea id="book-notes" rows="2" placeholder="e.g. Self-defense, Katana training, weight loss, total beginner..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%;">
+                    <span>Generate Trial Booking & Connect on WhatsApp</span>
+                </button>
+            </form>
+
+            <div id="booking-success" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Scripts: Three.js 3D Engine, Audio Synthesizer, Combat Blade Game & Shaders -->
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/OrbitControls.js"></script>
+    <script src="assets/js/audio.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/3d-armory.js"></script>
+    <script src="assets/js/blade-game.js"></script>
+    <script src="assets/js/hud-vision.js"></script>
+    <script src="assets/js/cursor-fx.js"></script>
+    <script src="assets/js/kuji-nexus.js"></script>
+    <script src="assets/js/premium-features.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Binaries and archives
+bin/
+*.zip
+*.log
+
+# Diagnostic and testing scripts
+*.ps1
+capture_sections.js
+detect_overlaps.js
+parse_issues.js
+run_overlap_audit.js
+
+# Preview screenshots (keep repo small and fast)
+preview_*.png
