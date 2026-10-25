@@ -569,7 +569,8 @@ function initSchedules() {
 
         data.forEach(item => {
             const card = document.createElement("div");
-            card.className = "schedule-item-card glass-panel";
+                        card.className = "schedule-item-card glass-panel";
+            const locIcon = item.location ? '📍' : '🌐';
             card.innerHTML = `
                 <div class="schedule-day-badge">
                     <span class="sched-day">${item.day}</span>
@@ -578,10 +579,11 @@ function initSchedules() {
                 <div class="schedule-info">
                     <span class="sched-batch-tag">${item.batch}</span>
                     <h4 class="sched-focus">${item.focus}</h4>
-                    <span class="sched-loc">${item.location || item.platform}</span>
+                    <span class="sched-loc">${locIcon} ${item.location || item.platform}</span>
                 </div>
                 <button class="btn-book-slot" data-slot="${item.day} ${item.time} (${item.batch})">
-                    <span>Reserve Spot</span>
+                    <span>Reserve Training Spot</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </button>
             `;
             listEl.appendChild(card);
