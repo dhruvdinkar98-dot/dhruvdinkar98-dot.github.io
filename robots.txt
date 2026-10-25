@@ -1,0 +1,13 @@
+# ============================================================
+# Ninja Combat Academy - Production Robots.txt
+# Authorized Crawlers: Googlebot, Bingbot, Slurp, DuckDuckBot
+# ============================================================
+
+User-agent: *
+Allow: /
+Disallow: /bin/
+Disallow: /scratch/
+
+# XML Sitemaps
+Sitemap: https://dhruvdinkar98-dot.github.io/ninja-combat-academy/sitemap.xml
+Sitemap: https://ninjacombatacademy.in/sitemap.xml
