@@ -569,22 +569,37 @@ function initSchedules() {
 
         data.forEach(item => {
             const card = document.createElement("div");
-                        card.className = "schedule-item-card glass-panel";
+            card.className = "schedule-item-card";
             const locIcon = item.location ? '📍' : '🌐';
+            const locText = item.location || item.platform;
+            const imgUrl = item.image || 'assets/images/ai_hero_katana_light.jpg';
+            const discBadge = item.discipline ? `<span class="sched-discipline-badge">${item.discipline}</span>` : '';
+            const levelBadge = item.level ? `<span class="sched-level-badge">🎯 ${item.level}</span>` : '';
+
             card.innerHTML = `
-                <div class="schedule-day-badge">
-                    <span class="sched-day">${item.day}</span>
-                    <span class="sched-time">${item.time}</span>
+                <div class="sched-card-media">
+                    <img src="${imgUrl}" alt="${item.focus}" class="sched-media-img" loading="lazy">
+                    <div class="sched-media-overlay"></div>
+                    <div class="sched-badge-row">
+                        <span class="sched-day-pill">${item.day}</span>
+                        <span class="sched-time-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ${item.time}</span>
+                    </div>
                 </div>
-                <div class="schedule-info">
-                    <span class="sched-batch-tag">${item.batch}</span>
+                <div class="sched-card-body">
+                    <div class="sched-meta-tags">
+                        <span class="sched-batch-tag">${item.batch}</span>
+                        ${discBadge}
+                    </div>
                     <h4 class="sched-focus">${item.focus}</h4>
-                    <span class="sched-loc">${locIcon} ${item.location || item.platform}</span>
+                    <div class="sched-info-details">
+                        <span class="sched-loc">${locIcon} ${locText}</span>
+                        ${levelBadge}
+                    </div>
+                    <button class="btn-book-slot" data-slot="${item.day} ${item.time} (${item.batch} - ${item.focus})">
+                        <span>Reserve Training Spot</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
                 </div>
-                <button class="btn-book-slot" data-slot="${item.day} ${item.time} (${item.batch})">
-                    <span>Reserve Training Spot</span>
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
             `;
             listEl.appendChild(card);
         });

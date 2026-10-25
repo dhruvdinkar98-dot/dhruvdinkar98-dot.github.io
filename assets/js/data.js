@@ -292,20 +292,128 @@ const NCA_DATA = {
 
     schedules: {
         offline: [
-            { day: "Monday", time: "06:30 AM - 08:00 AM", batch: "Morning Warrior", focus: "Taijutsu Striking & Ukemi Breakfalls", location: "Mathura Honbu Dojo" },
-            { day: "Monday", time: "05:30 PM - 07:00 PM", batch: "Evening Combat", focus: "Dakentaijutsu & Tactical Defense", location: "Mathura Honbu Dojo" },
-            { day: "Tuesday", time: "06:30 AM - 08:00 AM", batch: "Morning Warrior", focus: "Kenjutsu (Katana & Bokken Mastery)", location: "Mathura Honbu Dojo" },
-            { day: "Wednesday", time: "05:30 PM - 07:00 PM", batch: "Evening Weapons", focus: "Bōjutsu (Staff) & Hanbō Stick Fighting", location: "Mathura Honbu Dojo" },
-            { day: "Thursday", time: "06:30 AM - 08:00 AM", batch: "Conditioning", focus: "Shinobi Agility, Mobility & Obstacles", location: "Mathura Honbu Dojo" },
-            { day: "Friday", time: "05:30 PM - 07:30 PM", batch: "Stealth & Tactics", focus: "Shinobijutsu, Knife Defense & Locks", location: "Mathura Honbu Dojo" },
-            { day: "Saturday", time: "08:00 AM - 10:30 AM", batch: "Master Intensive", focus: "Open Sparring (Randori) & Belt Tests", location: "Mathura Honbu Dojo" },
-            { day: "Sunday", time: "04:00 PM - 05:30 PM", batch: "Youth Shinobi", focus: "Kids Agility, Anti-Bullying & Respect", location: "Mathura Honbu Dojo" }
+            { 
+                day: "Monday", 
+                time: "06:30 AM - 08:00 AM", 
+                batch: "Morning Warrior", 
+                focus: "Taijutsu Striking & Ukemi Breakfalls", 
+                location: "Mathura Honbu Dojo (Tatami Hall A)",
+                discipline: "Taijutsu Unarmed",
+                level: "All Skill Levels",
+                image: "assets/images/ai_taijutsu_defense_light.jpg"
+            },
+            { 
+                day: "Monday", 
+                time: "05:30 PM - 07:00 PM", 
+                batch: "Evening Combat", 
+                focus: "Dakentaijutsu & Tactical Defense", 
+                location: "Mathura Honbu Dojo (Combat Ring B)",
+                discipline: "Close-Quarters Combat",
+                level: "Striking & Defense",
+                image: "assets/images/action_fight_1.jpg"
+            },
+            { 
+                day: "Tuesday", 
+                time: "06:30 AM - 08:00 AM", 
+                batch: "Morning Warrior", 
+                focus: "Kenjutsu (Katana & Bokken Mastery)", 
+                location: "Mathura Honbu Dojo (Blade Hall)",
+                discipline: "Japanese Swordsmanship",
+                level: "Iaijutsu & Kumitachi",
+                image: "assets/images/ai_kenjutsu_duel_light.jpg"
+            },
+            { 
+                day: "Wednesday", 
+                time: "05:30 PM - 07:00 PM", 
+                batch: "Evening Weapons", 
+                focus: "Bōjutsu (Staff) & Hanbō Stick Fighting", 
+                location: "Mathura Honbu Dojo (Weapons Yard)",
+                discipline: "Staff & Stick Arts",
+                level: "Traditional Weaponry",
+                image: "assets/images/ai_bojutsu_staff_light.jpg"
+            },
+            { 
+                day: "Thursday", 
+                time: "06:30 AM - 08:00 AM", 
+                batch: "Conditioning", 
+                focus: "Shinobi Agility, Mobility & Obstacles", 
+                location: "Mathura Honbu Dojo (Obstacle Zone)",
+                discipline: "Ninja Parkour & Calisthenics",
+                level: "Speed & Endurance",
+                image: "assets/images/showcase_kata_leap.jpg"
+            },
+            { 
+                day: "Friday", 
+                time: "05:30 PM - 07:30 PM", 
+                batch: "Stealth & Tactics", 
+                focus: "Shinobijutsu, Knife Defense & Locks", 
+                location: "Mathura Honbu Dojo (Tactical Room)",
+                discipline: "Tactical Self Defense",
+                level: "Disarms & Joint Locks",
+                image: "assets/images/showcase_partner_disarm.jpg"
+            },
+            { 
+                day: "Saturday", 
+                time: "08:00 AM - 10:30 AM", 
+                batch: "Master Intensive", 
+                focus: "Open Sparring (Randori) & Belt Tests", 
+                location: "Mathura Honbu Dojo (Main Arena)",
+                discipline: "Full Combat Sparring",
+                level: "Kyu & Dan Gradings",
+                image: "assets/images/action_fight_2.jpg"
+            },
+            { 
+                day: "Sunday", 
+                time: "04:00 PM - 05:30 PM", 
+                batch: "Youth Shinobi", 
+                focus: "Kids Agility, Anti-Bullying & Respect", 
+                location: "Mathura Honbu Dojo (Youth Hall)",
+                discipline: "Junior Ninja Program",
+                level: "Ages 6 to 15",
+                image: "assets/images/self_defense.jpg"
+            }
         ],
         online: [
-            { day: "Tuesday", time: "07:30 PM - 08:45 PM IST", batch: "Global Batch A", focus: "Foundations of Ninjutsu & Stance Dynamics", platform: "Live Zoom Dojo" },
-            { day: "Thursday", time: "07:30 PM - 08:45 PM IST", batch: "Global Batch A", focus: "Kenjutsu Sword Fundamentals & Angle Cuts", platform: "Live Zoom Dojo" },
-            { day: "Saturday", time: "06:30 PM - 08:00 PM IST", batch: "Global Weekend", focus: "Joint Locks, Disarms & Tactical Home Defense", platform: "Live Zoom Dojo" },
-            { day: "Sunday", time: "08:00 PM - 09:15 PM IST", batch: "Global Masterclass", focus: "Kuji-in Meditation, Philosophy & Live Q&A", platform: "Live Zoom Dojo" }
+            { 
+                day: "Tuesday", 
+                time: "07:30 PM - 08:45 PM IST", 
+                batch: "Global Batch A", 
+                focus: "Foundations of Ninjutsu & Stance Dynamics", 
+                platform: "Live Zoom Interactive Stream",
+                discipline: "Ninjutsu Fundamentals",
+                level: "Worldwide Access",
+                image: "assets/images/ai_taijutsu_defense_light.jpg"
+            },
+            { 
+                day: "Thursday", 
+                time: "07:30 PM - 08:45 PM IST", 
+                batch: "Global Batch A", 
+                focus: "Kenjutsu Sword Fundamentals & Angle Cuts", 
+                platform: "Live Zoom Interactive Stream",
+                discipline: "Bokken Sword Mastery",
+                level: "Worldwide Access",
+                image: "assets/images/ai_kenjutsu_duel_light.jpg"
+            },
+            { 
+                day: "Saturday", 
+                time: "06:30 PM - 08:00 PM IST", 
+                batch: "Global Weekend", 
+                focus: "Joint Locks, Disarms & Tactical Home Defense", 
+                platform: "Live Zoom Interactive Stream",
+                discipline: "Tactical Defense At Home",
+                level: "Worldwide Access",
+                image: "assets/images/showcase_partner_disarm.jpg"
+            },
+            { 
+                day: "Sunday", 
+                time: "08:00 PM - 09:15 PM IST", 
+                batch: "Global Masterclass", 
+                focus: "Kuji-in Meditation, Philosophy & Live Q&A", 
+                platform: "Live Zoom Interactive Stream",
+                discipline: "Mindset & Inner Peace",
+                level: "Worldwide Access",
+                image: "assets/images/ai_meditation_zen_light.jpg"
+            }
         ]
     },
 
