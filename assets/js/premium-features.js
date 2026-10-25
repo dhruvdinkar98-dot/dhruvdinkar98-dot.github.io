@@ -11,7 +11,7 @@ class ShinobiPremiumFeatures {
 
     init() {
         // this.initDojoTour(); (removed as requested)
-        this.initKataAnalyzer();
+        // this.initKataAnalyzer(); (removed as requested)
         this.initWarriorRadar();
         this.initRegistrySearch();
         this.initVIPApplication();

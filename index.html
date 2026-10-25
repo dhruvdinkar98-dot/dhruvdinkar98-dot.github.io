@@ -21,8 +21,8 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/style.css?v=3.2.0">
-    <link rel="stylesheet" href="assets/css/glass-ui.css?v=3.2.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=3.3.0">
+    <link rel="stylesheet" href="assets/css/glass-ui.css?v=3.3.0">
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -88,7 +88,7 @@
                 <li><a href="#disciplines" class="nav-link">18 Disciplines</a></li>
                 <li><a href="#belts" class="nav-link">Belt Progression</a></li>
                 <li><a href="#vip-admission" class="nav-link">VIP Admission</a></li>
-                <li><a href="#kata-analyzer" class="nav-link">Kata Analyzer</a></li>
+                <li><a href="#schedule" class="nav-link">Schedule</a></li>
                 <li><a href="#belt-registry" class="nav-link">Dan Registry</a></li>
                 <li><a href="#location" class="nav-link">Contact</a></li>
             </ul>
@@ -491,75 +491,7 @@
     </section>
 
     
-    <section class="analyzer-section" id="kata-analyzer">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">✦ PRECISION BIOMECHANICS</div>
-                <h2 class="section-title">Shinobi Motion <span>Telemetry & Slow-Mo Analyzer</span></h2>
-                <p class="section-desc">
-                    Analyze classical katana trajectory angles, rotational torque, and footwork stability with our interactive high-speed video scrub controller.
-                </p>
-            </div>
-
-            <div class="analyzer-box">
-                <div class="video-scrubber-card glass-panel">
-                    <div class="analyzer-video-wrap">
-                        <video id="analyzer-video" autoplay muted loop playsinline poster="assets/images/ai_kenjutsu_duel_light.jpg">
-                            <source src="assets/video/hero_ambient.mp4" type="video/mp4">
-                        </video>
-                        <div class="analyzer-hud-overlay" id="analyzer-vectors">
-                            <div class="analyzer-hud-top" style="display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; font-family: 'Courier New', monospace; font-size: 0.72rem; color: #00ffcc;">
-                                <span style="white-space: nowrap; background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 4px;">TARGET: KESA-GIRI CUT</span>
-                                <span style="white-space: nowrap; background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 4px;">FPS: 120 (TELEMETRY SYNC)</span>
-                                <span style="white-space: nowrap; background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 4px;">ANGLE: 45.2°</span>
-                            </div>
-                            <div class="analyzer-vector-cross"></div>
-                            <div style="font-family: 'Courier New', monospace; font-size: 0.76rem; color: #334155; font-weight: 600;">
-                                <span style="color: #d90429; font-weight: 800;">TORQUE VECTOR:</span> 380 N·m &nbsp;|&nbsp; <span style="color: #b45309; font-weight: 800;">CORE ENGAGEMENT:</span> 98%
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="analyzer-controls-bar">
-                        <div style="display: flex; gap: 8px; align-items: center;">
-                            <button class="btn-outline" id="btn-analyzer-play" style="padding: 6px 14px; font-size: 0.78rem;">Pause</button>
-                            <button class="btn-outline" id="btn-analyzer-step" style="padding: 6px 14px; font-size: 0.78rem;">⏭ Step +1 Frame</button>
-                            <button class="btn-outline" id="btn-toggle-vectors" style="padding: 6px 14px; font-size: 0.78rem;">📐 HUD Vectors</button>
-                        </div>
-                        <div class="scrub-speed-btns">
-                            <button class="scrub-speed-btn" data-speed="0.25">0.25x</button>
-                            <button class="scrub-speed-btn" data-speed="0.5">0.5x</button>
-                            <button class="scrub-speed-btn active" data-speed="1.0">1.0x</button>
-                            <button class="scrub-speed-btn" data-speed="1.5">1.5x</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="analyzer-notes-card glass-panel">
-                    <span style="color: var(--crimson); font-weight: 800; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">Kinematic Breakdown</span>
-                    <h3 style="margin-top: 6px;">Happō Giri Sword Vector Analysis</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.65;">
-                        In classical Kenjutsu, cutting power originates in the pelvic hara (dantian) rather than arm strength. The telemetry overlay illustrates how gravitational momentum accelerates the kissaki (blade tip).
-                    </p>
-
-                    <ul class="biomechanics-list" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
-                        <li class="biomechanics-item">
-                            <strong style="display: block; margin-bottom: 4px; line-height: 1.35; color: var(--text-onyx);">1. Tenouchi Grip Compression</strong>
-                            <span style="display: block; line-height: 1.55; color: var(--text-slate);">Micro-squeeze at impact transfers 94% kinetic energy into cutting edge without blade vibration.</span>
-                        </li>
-                        <li class="biomechanics-item">
-                            <strong style="display: block; margin-bottom: 4px; line-height: 1.35; color: var(--text-onyx);">2. Zanshin Recovery Angle</strong>
-                            <span style="display: block; line-height: 1.55; color: var(--text-slate);">Maintains structural guard (Chūdan-no-kamae) within 0.18 seconds post-strike to counter secondary assailants.</span>
-                        </li>
-                        <li class="biomechanics-item">
-                            <strong style="display: block; margin-bottom: 4px; line-height: 1.35; color: var(--text-onyx);">3. Ashisabaki Weight Distribution</strong>
-                            <span style="display: block; line-height: 1.55; color: var(--text-slate);">Rear heel grounded; 60/40 center of mass ensures immediate pivot capability in all 8 cardinal directions.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- 13D. WARRIOR APTITUDE RADAR & SHINOBI IQ -->
     <section class="iq-section" id="warrior-iq">
@@ -829,7 +761,7 @@
                         <li><a href="#about">About Sensei Dhruv</a></li>
                         <li><a href="#belts">Belt Rank Criteria</a></li>
                         <li><a href="#vip-admission">VIP Admission & Audition</a></li>
-                        <li><a href="#kata-analyzer">Kata Analyzer</a></li>
+                        <li><a href="#schedule">Weekly Schedule</a></li>
                         <li><a href="#belt-registry">Dan Registry</a></li>
                         <li><a href="#location">Mathura Location</a></li>
                     </ul>
@@ -953,14 +885,14 @@
     <!-- Scripts: Three.js 3D Engine, Audio Synthesizer, Combat Blade Game & Shaders -->
     <script src="assets/js/three.min.js"></script>
     <script src="assets/js/OrbitControls.js"></script>
-    <script src="assets/js/audio.js?v=3.2.0"></script>
-    <script src="assets/js/data.js?v=3.2.0"></script>
+    <script src="assets/js/audio.js?v=3.3.0"></script>
+    <script src="assets/js/data.js?v=3.3.0"></script>
     
     
     <script src="assets/js/hud-vision.js"></script>
     <script src="assets/js/cursor-fx.js"></script>
     <script src="assets/js/kuji-nexus.js"></script>
-    <script src="assets/js/premium-features.js?v=3.2.0"></script>
-    <script src="assets/js/main.js?v=3.2.0"></script>
+    <script src="assets/js/premium-features.js?v=3.3.0"></script>
+    <script src="assets/js/main.js?v=3.3.0"></script>
 </body>
 </html>
