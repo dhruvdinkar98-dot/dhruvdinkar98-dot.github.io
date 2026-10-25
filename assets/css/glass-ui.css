@@ -1741,3 +1741,29 @@ footer.footer .footer-input-wrap input,
     color: #059669 !important;
     font-weight: 800 !important;
 }
+
+/* Real Sensei Dhruv Hero Photo & Round Crest Styling */
+.hero-sensei-real-photo {
+    width: 100% !important;
+    height: 480px !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+    border-radius: 12px 12px 0 0 !important;
+    display: block !important;
+    background: #000000 !important;
+}
+.brand-logo-circle {
+    width: 70px !important;
+    height: 70px !important;
+    min-width: 70px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    background: #090d16 !important;
+    border: 2.5px solid #d90429 !important;
+    box-shadow: 0 4px 16px rgba(217, 4, 41, 0.3) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+.brand-logo:hover .brand-logo-circle {
+    transform: scale(1.06) rotate(2deg) !important;
+    box-shadow: 0 6px 22px rgba(217, 4, 41, 0.45) !important;
+}
