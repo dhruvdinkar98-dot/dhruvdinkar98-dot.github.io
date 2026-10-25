@@ -2959,3 +2959,105 @@ body.vision-cyber {
     .mandala-container { grid-template-columns: 1fr; }
     .kuji-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ==========================================================================
+   HEADROOM & COMPLETE SENSEI DHRUV PORTRAIT INTEGRITY (ZERO HEAD CROPPING)
+   ========================================================================== */
+.hero-card-side {
+    position: relative !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+}
+
+.hero-feature-card {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #0b0f19 !important;
+    border: 1.5px solid rgba(217, 4, 41, 0.4) !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6) !important;
+    max-width: 440px !important;
+    width: 100% !important;
+}
+
+.hero-card-img-wrap {
+    aspect-ratio: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    position: relative !important;
+    display: block !important;
+    background: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.hero-card-img-wrap img,
+.hero-sensei-real-photo {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: top center !important;
+    display: block !important;
+    border-radius: 16px 16px 0 0 !important;
+    transform: none !important;
+    transition: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.hero-card-img-wrap img:hover,
+.hero-sensei-real-photo:hover {
+    transform: none !important;
+}
+
+.hero-card-badge {
+    position: absolute !important;
+    top: 14px !important;
+    left: 14px !important;
+    background: rgba(217, 4, 41, 0.95) !important;
+    color: #ffffff !important;
+    font-size: 0.72rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+    padding: 5px 12px !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+    z-index: 2 !important;
+}
+
+.hero-card-info {
+    padding: 20px 24px 24px !important;
+    background: #0f1523 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.hero-card-info h3 {
+    color: #ffffff !important;
+    font-size: 1.45rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
+    letter-spacing: -0.3px !important;
+}
+
+.hero-card-info p {
+    color: #cbd5e1 !important;
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 12px !important;
+}
+
+.hero-card-meta {
+    display: flex !important;
+    gap: 16px !important;
+    align-items: center !important;
+    font-size: 0.88rem !important;
+    color: #94a3b8 !important;
+}
